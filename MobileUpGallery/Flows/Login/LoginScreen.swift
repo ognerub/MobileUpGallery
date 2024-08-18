@@ -10,7 +10,7 @@ import SwiftUI
 struct LoginScreen: View {
 
     @Environment(\.colorScheme) var colorScheme
-    @StateObject var viewModel = LoginScreenViewModel()
+    @ObservedObject var viewModel: LoginScreenViewModel
 
     var body: some View {
         titleText
@@ -28,7 +28,7 @@ struct LoginScreen: View {
 
     var loginButton: some View {
         Button(action: {
-            // TODO: - press to login
+            viewModel.pushToGalleryScreen()
         }, label: {
             Text(Localization.LoginScreen.loginButtonText)
                 .font(Font.system(size: DSConstants.buttonTextSize, weight: .medium))
@@ -37,7 +37,7 @@ struct LoginScreen: View {
                 .background(colorScemeColor(.black))
                 .clipShape(.rect(cornerRadius: DSConstants.buttonCornerRadius))
         })
-        .padding(.horizontal, DSConstants.buttonPadding)
+        .padding(.horizontal, DSConstants.defaultPadding)
         .frame(maxHeight: .infinity, alignment: .bottom)
     }
 }
@@ -56,5 +56,5 @@ private extension LoginScreen {
 }
 
 #Preview {
-    LoginScreen()
+    LoginScreen(viewModel: LoginScreenViewModel(router: .previewMock()))
 }

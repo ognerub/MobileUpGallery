@@ -31,6 +31,10 @@
 		812FFA222C71EB89005D10B4 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA212C71EB89005D10B4 /* Mocks.swift */; };
 		812FFA242C71EC1F005D10B4 /* GalleryScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA232C71EC1F005D10B4 /* GalleryScreenViewModel.swift */; };
 		812FFA272C71EDCE005D10B4 /* PhotoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA262C71EDCE005D10B4 /* PhotoImageView.swift */; };
+		812FFA2C2C71F58F005D10B4 /* PreviewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA2B2C71F58F005D10B4 /* PreviewMock.swift */; };
+		812FFA2E2C71F5C5005D10B4 /* EmptyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA2D2C71F5C5005D10B4 /* EmptyRouter.swift */; };
+		812FFA302C71FC1C005D10B4 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA2F2C71FC1C005D10B4 /* LaunchScreen.swift */; };
+		812FFA322C7209E2005D10B4 /* SinglePhotoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA312C7209E2005D10B4 /* SinglePhotoScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		812FFA212C71EB89005D10B4 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		812FFA232C71EC1F005D10B4 /* GalleryScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryScreenViewModel.swift; sourceTree = "<group>"; };
 		812FFA262C71EDCE005D10B4 /* PhotoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImageView.swift; sourceTree = "<group>"; };
+		812FFA2B2C71F58F005D10B4 /* PreviewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMock.swift; sourceTree = "<group>"; };
+		812FFA2D2C71F5C5005D10B4 /* EmptyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyRouter.swift; sourceTree = "<group>"; };
+		812FFA2F2C71FC1C005D10B4 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		812FFA312C7209E2005D10B4 /* SinglePhotoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePhotoScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +181,7 @@
 		812FF9E52C71C30D005D10B4 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				812FFA2F2C71FC1C005D10B4 /* LaunchScreen.swift */,
 				812FF9FA2C71E255005D10B4 /* Login */,
 				812FFA1B2C71EA48005D10B4 /* Gallery */,
 			);
@@ -183,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				812FF9EB2C71CE7F005D10B4 /* AppCoordinator.swift */,
+				812FFA2B2C71F58F005D10B4 /* PreviewMock.swift */,
+				812FFA2D2C71F5C5005D10B4 /* EmptyRouter.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -237,6 +248,7 @@
 			children = (
 				812FFA1C2C71EA68005D10B4 /* GalleryScreen.swift */,
 				812FFA232C71EC1F005D10B4 /* GalleryScreenViewModel.swift */,
+				812FFA312C7209E2005D10B4 /* SinglePhotoScreen.swift */,
 				812FFA252C71EDB3005D10B4 /* Views */,
 			);
 			path = Gallery;
@@ -401,12 +413,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				812FFA222C71EB89005D10B4 /* Mocks.swift in Sources */,
+				812FFA302C71FC1C005D10B4 /* LaunchScreen.swift in Sources */,
 				812FF9E72C71C34A005D10B4 /* AppDelegate.swift in Sources */,
 				812FFA1A2C71E8D6005D10B4 /* Assets.generated.swift in Sources */,
+				812FFA2C2C71F58F005D10B4 /* PreviewMock.swift in Sources */,
 				812FFA1D2C71EA68005D10B4 /* GalleryScreen.swift in Sources */,
 				812FF9BE2C71C11A005D10B4 /* LoginScreen.swift in Sources */,
 				812FFA192C71E8D6005D10B4 /* Localization.swift in Sources */,
 				812FF9F92C71E251005D10B4 /* LoginScreenViewModel.swift in Sources */,
+				812FFA2E2C71F5C5005D10B4 /* EmptyRouter.swift in Sources */,
+				812FFA322C7209E2005D10B4 /* SinglePhotoScreen.swift in Sources */,
 				812FF9EC2C71CE7F005D10B4 /* AppCoordinator.swift in Sources */,
 				812FF9E92C71C3E4005D10B4 /* SceneDelegate.swift in Sources */,
 				812FFA1F2C71EA9F005D10B4 /* PhotoModel.swift in Sources */,

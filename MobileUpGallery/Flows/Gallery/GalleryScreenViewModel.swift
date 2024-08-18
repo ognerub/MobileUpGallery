@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import XCoordinator
 
 final class GalleryScreenViewModel: ObservableObject {
 
@@ -15,4 +16,14 @@ final class GalleryScreenViewModel: ObservableObject {
     ]
 
     @Published var photos: [PhotoModel] = Mocks.photos
+
+    private let router: UnownedRouter<AppRoute>
+
+    init(router: UnownedRouter<AppRoute>) {
+        self.router = router
+    }
+
+    func pushToSinglePhotoScreen(imageName: String) {
+        router.trigger(.photo(imageName))
+    }
 }
