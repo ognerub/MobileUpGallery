@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WebKit
 
 struct LoginScreen: View {
     @Environment(\.colorScheme) var colorScheme
@@ -17,6 +18,11 @@ struct LoginScreen: View {
                 titleText
                 loginButton
             }
+            .sheet(isPresented: $viewModel.isWebViewPresented, content: {
+                if let urlString: URL = viewModel.createWebViewUrl() {
+                    WebView(url: urlString, webView: WKWebView())
+                }
+            })
         }
     }
 
@@ -31,7 +37,8 @@ struct LoginScreen: View {
 
     var loginButton: some View {
         Button(action: {
-            viewModel.pushToGalleryScreen()
+            //viewModel.pushToGalleryScreen()
+            viewModel.isWebViewPresented = true
         }, label: {
             Text(Localization.LoginScreen.loginButtonText)
                 .font(Font.system(size: DSConstants.buttonTextSize, weight: .medium))

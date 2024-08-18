@@ -42,6 +42,8 @@
 		817562E52C723A78001E1FF4 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562E42C723A78001E1FF4 /* LaunchScreen.swift */; };
 		817562E72C723D34001E1FF4 /* ImagesGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562E62C723D34001E1FF4 /* ImagesGridView.swift */; };
 		817562E92C723D5A001E1FF4 /* VideosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562E82C723D5A001E1FF4 /* VideosListView.swift */; };
+		817562ED2C7278FC001E1FF4 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562EC2C7278FC001E1FF4 /* NetworkConstants.swift */; };
+		817562F02C72816A001E1FF4 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562EF2C72816A001E1FF4 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		817562E42C723A78001E1FF4 /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		817562E62C723D34001E1FF4 /* ImagesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesGridView.swift; sourceTree = "<group>"; };
 		817562E82C723D5A001E1FF4 /* VideosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosListView.swift; sourceTree = "<group>"; };
+		817562EC2C7278FC001E1FF4 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		817562EF2C72816A001E1FF4 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 				812FF9E52C71C30D005D10B4 /* Flows */,
 				817562D92C72249D001E1FF4 /* Components */,
 				812FFA202C71EAA4005D10B4 /* Models */,
+				817562EE2C727FA1001E1FF4 /* Services */,
 				812FF9FC2C71E385005D10B4 /* Helpers */,
 				812FF9FB2C71E285005D10B4 /* Resources */,
 				812FF9C12C71C11B005D10B4 /* Preview Content */,
@@ -208,8 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				812FF9EB2C71CE7F005D10B4 /* AppCoordinator.swift */,
-				812FFA2B2C71F58F005D10B4 /* PreviewMock.swift */,
 				812FFA2D2C71F5C5005D10B4 /* EmptyRouter.swift */,
+				812FFA2B2C71F58F005D10B4 /* PreviewMock.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 			children = (
 				812FF9BD2C71C11A005D10B4 /* LoginScreen.swift */,
 				812FF9F82C71E251005D10B4 /* LoginScreenViewModel.swift */,
+				817562F12C728176001E1FF4 /* Views */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -297,6 +303,22 @@
 				817562DA2C7224D0001E1FF4 /* NavigationBarBackButtonView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		817562EE2C727FA1001E1FF4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				817562EC2C7278FC001E1FF4 /* NetworkConstants.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		817562F12C728176001E1FF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				817562EF2C72816A001E1FF4 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817562ED2C7278FC001E1FF4 /* NetworkConstants.swift in Sources */,
 				812FFA222C71EB89005D10B4 /* Mocks.swift in Sources */,
 				812FFA342C720EAF005D10B4 /* PickerView.swift in Sources */,
 				817562E52C723A78001E1FF4 /* LaunchScreen.swift in Sources */,
@@ -450,6 +473,7 @@
 				812FFA1D2C71EA68005D10B4 /* GalleryScreen.swift in Sources */,
 				812FF9BE2C71C11A005D10B4 /* LoginScreen.swift in Sources */,
 				812FFA192C71E8D6005D10B4 /* Localization.swift in Sources */,
+				817562F02C72816A001E1FF4 /* WebView.swift in Sources */,
 				817562E92C723D5A001E1FF4 /* VideosListView.swift in Sources */,
 				817562D82C7222B8001E1FF4 /* VideoImageView.swift in Sources */,
 				812FF9F92C71E251005D10B4 /* LoginScreenViewModel.swift in Sources */,
