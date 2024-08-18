@@ -1,0 +1,24 @@
+{
+  "originHash" : "f8219934a683082959be9fe40febbe1c55401ea08f6c91d7323daa3a3f14de50",
+  "pins" : [
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "b06a8c8596e4c3e8e7788e08e720e3248563ce6a",
+        "version" : "6.7.1"
+      }
+    },
+    {
+      "identity" : "xcoordinator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/QuickBirdEng/XCoordinator.git",
+      "state" : {
+        "revision" : "00b066139ed0bf2f68549a7d87434ed36dfa6dea",
+        "version" : "2.2.1"
+      }
+    }
+  ],
+  "version" : 3
+}

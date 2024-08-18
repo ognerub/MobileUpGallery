@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LoginScreen.swift
 //  MobileUpGallery
 //
 //  Created by Alexander Ognerubov on 18.08.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LoginScreen: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +20,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    LoginScreen()
 }

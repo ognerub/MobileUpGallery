@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		812FF9BC2C71C11A005D10B4 /* MobileUpGalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FF9BB2C71C11A005D10B4 /* MobileUpGalleryApp.swift */; };
-		812FF9BE2C71C11A005D10B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FF9BD2C71C11A005D10B4 /* ContentView.swift */; };
+		812FF9BE2C71C11A005D10B4 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FF9BD2C71C11A005D10B4 /* LoginScreen.swift */; };
 		812FF9C02C71C11B005D10B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812FF9BF2C71C11B005D10B4 /* Assets.xcassets */; };
 		812FF9C32C71C11B005D10B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812FF9C22C71C11B005D10B4 /* Preview Assets.xcassets */; };
 		812FF9CD2C71C11B005D10B4 /* MobileUpGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FF9CC2C71C11B005D10B4 /* MobileUpGalleryTests.swift */; };
 		812FF9D72C71C11B005D10B4 /* MobileUpGalleryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FF9D62C71C11B005D10B4 /* MobileUpGalleryUITests.swift */; };
 		812FF9D92C71C11B005D10B4 /* MobileUpGalleryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FF9D82C71C11B005D10B4 /* MobileUpGalleryUITestsLaunchTests.swift */; };
+		812FF9E72C71C34A005D10B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FF9E62C71C34A005D10B4 /* AppDelegate.swift */; };
+		812FF9E92C71C3E4005D10B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FF9E82C71C3E4005D10B4 /* SceneDelegate.swift */; };
+		812FF9EC2C71CE7F005D10B4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FF9EB2C71CE7F005D10B4 /* AppCoordinator.swift */; };
+		812FF9EF2C71CFBC005D10B4 /* XCoordinator in Frameworks */ = {isa = PBXBuildFile; productRef = 812FF9EE2C71CFBC005D10B4 /* XCoordinator */; };
+		812FF9F12C71CFBC005D10B4 /* XCoordinatorCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 812FF9F02C71CFBC005D10B4 /* XCoordinatorCombine */; };
+		812FF9F32C71CFBC005D10B4 /* XCoordinatorRx in Frameworks */ = {isa = PBXBuildFile; productRef = 812FF9F22C71CFBC005D10B4 /* XCoordinatorRx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +40,7 @@
 
 /* Begin PBXFileReference section */
 		812FF9B82C71C11A005D10B4 /* MobileUpGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileUpGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		812FF9BB2C71C11A005D10B4 /* MobileUpGalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileUpGalleryApp.swift; sourceTree = "<group>"; };
-		812FF9BD2C71C11A005D10B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		812FF9BD2C71C11A005D10B4 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		812FF9BF2C71C11B005D10B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		812FF9C22C71C11B005D10B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		812FF9C82C71C11B005D10B4 /* MobileUpGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileUpGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,10 @@
 		812FF9D22C71C11B005D10B4 /* MobileUpGalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileUpGalleryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		812FF9D62C71C11B005D10B4 /* MobileUpGalleryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileUpGalleryUITests.swift; sourceTree = "<group>"; };
 		812FF9D82C71C11B005D10B4 /* MobileUpGalleryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileUpGalleryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		812FF9E62C71C34A005D10B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		812FF9E82C71C3E4005D10B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		812FF9EB2C71CE7F005D10B4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		812FF9F52C71D25B005D10B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812FF9F12C71CFBC005D10B4 /* XCoordinatorCombine in Frameworks */,
+				812FF9EF2C71CFBC005D10B4 /* XCoordinator in Frameworks */,
+				812FF9F32C71CFBC005D10B4 /* XCoordinatorRx in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +105,10 @@
 		812FF9BA2C71C11A005D10B4 /* MobileUpGallery */ = {
 			isa = PBXGroup;
 			children = (
-				812FF9BB2C71C11A005D10B4 /* MobileUpGalleryApp.swift */,
-				812FF9BD2C71C11A005D10B4 /* ContentView.swift */,
+				812FF9F52C71D25B005D10B4 /* Info.plist */,
+				812FF9F42C71D01C005D10B4 /* AppDelegate */,
+				812FF9EA2C71CE70005D10B4 /* Coordinator */,
+				812FF9E52C71C30D005D10B4 /* Flows */,
 				812FF9BF2C71C11B005D10B4 /* Assets.xcassets */,
 				812FF9C12C71C11B005D10B4 /* Preview Content */,
 			);
@@ -127,6 +140,31 @@
 			path = MobileUpGalleryUITests;
 			sourceTree = "<group>";
 		};
+		812FF9E52C71C30D005D10B4 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				812FF9BD2C71C11A005D10B4 /* LoginScreen.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		812FF9EA2C71CE70005D10B4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				812FF9EB2C71CE7F005D10B4 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		812FF9F42C71D01C005D10B4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				812FF9E62C71C34A005D10B4 /* AppDelegate.swift */,
+				812FF9E82C71C3E4005D10B4 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +181,11 @@
 			dependencies = (
 			);
 			name = MobileUpGallery;
+			packageProductDependencies = (
+				812FF9EE2C71CFBC005D10B4 /* XCoordinator */,
+				812FF9F02C71CFBC005D10B4 /* XCoordinatorCombine */,
+				812FF9F22C71CFBC005D10B4 /* XCoordinatorRx */,
+			);
 			productName = MobileUpGallery;
 			productReference = 812FF9B82C71C11A005D10B4 /* MobileUpGallery.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +258,9 @@
 				Base,
 			);
 			mainGroup = 812FF9AF2C71C11A005D10B4;
+			packageReferences = (
+				812FF9ED2C71CFBC005D10B4 /* XCRemoteSwiftPackageReference "XCoordinator" */,
+			);
 			productRefGroup = 812FF9B92C71C11A005D10B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				812FF9BE2C71C11A005D10B4 /* ContentView.swift in Sources */,
-				812FF9BC2C71C11A005D10B4 /* MobileUpGalleryApp.swift in Sources */,
+				812FF9E72C71C34A005D10B4 /* AppDelegate.swift in Sources */,
+				812FF9BE2C71C11A005D10B4 /* LoginScreen.swift in Sources */,
+				812FF9EC2C71CE7F005D10B4 /* AppCoordinator.swift in Sources */,
+				812FF9E92C71C3E4005D10B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -425,11 +473,12 @@
 				DEVELOPMENT_TEAM = Q9BL3YJ6S3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = MobileUpGallery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,9 +486,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = alexander.ognerubov.MobileUpGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,11 +507,12 @@
 				DEVELOPMENT_TEAM = Q9BL3YJ6S3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = MobileUpGallery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,9 +520,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = alexander.ognerubov.MobileUpGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -588,6 +646,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		812FF9ED2C71CFBC005D10B4 /* XCRemoteSwiftPackageReference "XCoordinator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QuickBirdEng/XCoordinator.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		812FF9EE2C71CFBC005D10B4 /* XCoordinator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 812FF9ED2C71CFBC005D10B4 /* XCRemoteSwiftPackageReference "XCoordinator" */;
+			productName = XCoordinator;
+		};
+		812FF9F02C71CFBC005D10B4 /* XCoordinatorCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 812FF9ED2C71CFBC005D10B4 /* XCRemoteSwiftPackageReference "XCoordinator" */;
+			productName = XCoordinatorCombine;
+		};
+		812FF9F22C71CFBC005D10B4 /* XCoordinatorRx */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 812FF9ED2C71CFBC005D10B4 /* XCRemoteSwiftPackageReference "XCoordinator" */;
+			productName = XCoordinatorRx;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 812FF9B02C71C11A005D10B4 /* Project object */;
 }
