@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  MobileUpGallery
+
+  Created by Alexander Ognerubov on 18.08.2024.
+  
+*/
+
+// MARK: - Login
+"loginScreen.titleText" = "Mobile Up\nGallery";
+"loginScreen.loginButtonText" = "Enter using VK";
+

@@ -19,6 +19,13 @@
 		812FF9EF2C71CFBC005D10B4 /* XCoordinator in Frameworks */ = {isa = PBXBuildFile; productRef = 812FF9EE2C71CFBC005D10B4 /* XCoordinator */; };
 		812FF9F12C71CFBC005D10B4 /* XCoordinatorCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 812FF9F02C71CFBC005D10B4 /* XCoordinatorCombine */; };
 		812FF9F32C71CFBC005D10B4 /* XCoordinatorRx in Frameworks */ = {isa = PBXBuildFile; productRef = 812FF9F22C71CFBC005D10B4 /* XCoordinatorRx */; };
+		812FF9F72C71DB30005D10B4 /* DSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FF9F62C71DB30005D10B4 /* DSConstants.swift */; };
+		812FF9F92C71E251005D10B4 /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FF9F82C71E251005D10B4 /* LoginScreenViewModel.swift */; };
+		812FF9FF2C71E3BB005D10B4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 812FF9FD2C71E3BB005D10B4 /* Localizable.strings */; };
+		812FFA022C71E534005D10B4 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 812FFA012C71E534005D10B4 /* swiftgen.yml */; };
+		812FFA122C71E88F005D10B4 /* template.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 812FFA0E2C71E88F005D10B4 /* template.stencil */; };
+		812FFA192C71E8D6005D10B4 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA172C71E8D6005D10B4 /* Localization.swift */; };
+		812FFA1A2C71E8D6005D10B4 /* Assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA182C71E8D6005D10B4 /* Assets.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +58,15 @@
 		812FF9E62C71C34A005D10B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		812FF9E82C71C3E4005D10B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		812FF9EB2C71CE7F005D10B4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		812FF9F52C71D25B005D10B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		812FF9F52C71D25B005D10B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		812FF9F62C71DB30005D10B4 /* DSConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSConstants.swift; sourceTree = "<group>"; };
+		812FF9F82C71E251005D10B4 /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
+		812FF9FE2C71E3BB005D10B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		812FFA002C71E413005D10B4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		812FFA012C71E534005D10B4 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		812FFA0E2C71E88F005D10B4 /* template.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.stencil; sourceTree = "<group>"; };
+		812FFA172C71E8D6005D10B4 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		812FFA182C71E8D6005D10B4 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +100,7 @@
 		812FF9AF2C71C11A005D10B4 = {
 			isa = PBXGroup;
 			children = (
+				812FFA012C71E534005D10B4 /* swiftgen.yml */,
 				812FF9BA2C71C11A005D10B4 /* MobileUpGallery */,
 				812FF9CB2C71C11B005D10B4 /* MobileUpGalleryTests */,
 				812FF9D52C71C11B005D10B4 /* MobileUpGalleryUITests */,
@@ -105,12 +121,14 @@
 		812FF9BA2C71C11A005D10B4 /* MobileUpGallery */ = {
 			isa = PBXGroup;
 			children = (
-				812FF9F52C71D25B005D10B4 /* Info.plist */,
+				812FFA0F2C71E88F005D10B4 /* SwiftGen */,
 				812FF9F42C71D01C005D10B4 /* AppDelegate */,
 				812FF9EA2C71CE70005D10B4 /* Coordinator */,
 				812FF9E52C71C30D005D10B4 /* Flows */,
-				812FF9BF2C71C11B005D10B4 /* Assets.xcassets */,
+				812FF9FC2C71E385005D10B4 /* Helpers */,
+				812FF9FB2C71E285005D10B4 /* Resources */,
 				812FF9C12C71C11B005D10B4 /* Preview Content */,
+				812FF9F52C71D25B005D10B4 /* Info.plist */,
 			);
 			path = MobileUpGallery;
 			sourceTree = "<group>";
@@ -143,7 +161,7 @@
 		812FF9E52C71C30D005D10B4 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				812FF9BD2C71C11A005D10B4 /* LoginScreen.swift */,
+				812FF9FA2C71E255005D10B4 /* Login */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -163,6 +181,42 @@
 				812FF9E82C71C3E4005D10B4 /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		812FF9FA2C71E255005D10B4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				812FF9BD2C71C11A005D10B4 /* LoginScreen.swift */,
+				812FF9F82C71E251005D10B4 /* LoginScreenViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		812FF9FB2C71E285005D10B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				812FF9BF2C71C11B005D10B4 /* Assets.xcassets */,
+				812FF9FD2C71E3BB005D10B4 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		812FF9FC2C71E385005D10B4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				812FF9F62C71DB30005D10B4 /* DSConstants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		812FFA0F2C71E88F005D10B4 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				812FFA182C71E8D6005D10B4 /* Assets.generated.swift */,
+				812FFA172C71E8D6005D10B4 /* Localization.swift */,
+				812FFA0E2C71E88F005D10B4 /* template.stencil */,
+			);
+			path = SwiftGen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +310,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 812FF9AF2C71C11A005D10B4;
 			packageReferences = (
@@ -278,7 +333,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				812FF9C32C71C11B005D10B4 /* Preview Assets.xcassets in Resources */,
+				812FF9FF2C71E3BB005D10B4 /* Localizable.strings in Resources */,
 				812FF9C02C71C11B005D10B4 /* Assets.xcassets in Resources */,
+				812FFA122C71E88F005D10B4 /* template.stencil in Resources */,
+				812FFA022C71E534005D10B4 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,9 +362,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				812FF9E72C71C34A005D10B4 /* AppDelegate.swift in Sources */,
+				812FFA1A2C71E8D6005D10B4 /* Assets.generated.swift in Sources */,
 				812FF9BE2C71C11A005D10B4 /* LoginScreen.swift in Sources */,
+				812FFA192C71E8D6005D10B4 /* Localization.swift in Sources */,
+				812FF9F92C71E251005D10B4 /* LoginScreenViewModel.swift in Sources */,
 				812FF9EC2C71CE7F005D10B4 /* AppCoordinator.swift in Sources */,
 				812FF9E92C71C3E4005D10B4 /* SceneDelegate.swift in Sources */,
+				812FF9F72C71DB30005D10B4 /* DSConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,12 +404,25 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		812FF9FD2C71E3BB005D10B4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				812FF9FE2C71E3BB005D10B4 /* en */,
+				812FFA002C71E413005D10B4 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		812FF9DA2C71C11B005D10B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -411,6 +486,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

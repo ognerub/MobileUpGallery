@@ -1,0 +1,18 @@
+input_dir: MobileUpGallery/Resources
+output_dir: MobileUpGallery/SwiftGen
+xcassets:
+  inputs:
+    - Assets.xcassets
+  outputs:
+    - templatePath: MobileUpGallery/SwiftGen/template.stencil
+      params:
+        publicAccess: true
+      output: Assets.generated.swift
+strings:
+- paths: en.lproj/Localizable.strings
+  templatePath: MobileUpGallery/SwiftGen/template.stencil
+  output: Localization.swift
+  params:
+    enumName: Localization
+    publicAccess: 1
+    noComments: 0

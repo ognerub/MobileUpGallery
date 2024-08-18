@@ -31,7 +31,7 @@ final class AppCoordinator: NavigationCoordinator<AppRoute> {
 
     // MARK: - Build Screens
     private func buildLaunchScreen() -> UIViewController {
-        let rootView = ContentView()
+        let rootView = LoginScreen()
         let vc = UIHostingController(rootView: rootView)
         return vc
     }
