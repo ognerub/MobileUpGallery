@@ -35,7 +35,7 @@ struct LoginScreen: View {
                 .frame(maxWidth: .infinity, maxHeight: 52)
                 .foregroundColor(colorScemeColor(.white))
                 .background(colorScemeColor(.black))
-                .clipShape(.rect(cornerRadius: DSConstants.buttonCornerRadius))
+                .clipShape(.rect(cornerRadius: DSConstants.defaultCornerRadius))
         })
         .padding(.horizontal, DSConstants.defaultPadding)
         .frame(maxHeight: .infinity, alignment: .bottom)

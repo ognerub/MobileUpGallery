@@ -8,15 +8,27 @@
 import Foundation
 
 public enum DSConstants {
-    // MARK: Login Screen
-    static let defaultPadding: CGFloat = 16
-    static let doublePadding: CGFloat = 32
-    static let titleTextPadding: CGFloat = 24
-    static let titleTextSize: CGFloat = 44
-    static let buttonTextSize: CGFloat = 15
-    static let buttonCornerRadius: CGFloat = 16
-
-    // MARK: Gallery Screen
+    // MARK: Default values
+    /// 0
     static let zeroSpacing: CGFloat = 0
-    static let gridSpacing: CGFloat = 4
+    /// 4
+    static let defaultSpacing: CGFloat = 4
+    /// 12
+    static let tripleSpacing: CGFloat = 4
+    /// 16
+    static let fouthSpacing: CGFloat = 16
+    /// 16
+    static let defaultPadding: CGFloat = 16
+    /// 32
+    static let doublePadding: CGFloat = 32
+    /// 16
+    static let defaultCornerRadius: CGFloat = 16
+
+    // MARK: Login Screen
+    /// 24
+    static let titleTextPadding: CGFloat = 24
+    /// 44
+    static let titleTextSize: CGFloat = 44
+    /// 15
+    static let buttonTextSize: CGFloat = 15
 }

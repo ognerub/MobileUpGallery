@@ -8,6 +8,16 @@ import Foundation
 
 public enum Localization {
 
+    public enum GalleryScreen {
+
+        public enum PickerTitles {
+            /// Photo
+            public static let photo = localize("galleryScreen.pickerTitles.photo")
+            /// Video
+            public static let video = localize("galleryScreen.pickerTitles.video")
+        }
+    }
+
     public enum LoginScreen {
         /// Enter using VK
         public static let loginButtonText = localize("loginScreen.loginButtonText")

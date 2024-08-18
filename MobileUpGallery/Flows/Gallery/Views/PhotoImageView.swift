@@ -15,7 +15,6 @@ struct PhotoImageView: View {
         Image(uiImage: UIImage(named: imageName) ?? UIImage())
             .resizable()
             .scaledToFill()
-
     }
 }
 

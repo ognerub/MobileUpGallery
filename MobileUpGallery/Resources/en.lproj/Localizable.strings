@@ -9,4 +9,7 @@
 // MARK: - Login
 "loginScreen.titleText" = "Mobile Up\nGallery";
 "loginScreen.loginButtonText" = "Enter using VK";
+// MARK: - Gallery
+"galleryScreen.pickerTitles.photo" = "Photo";
+"galleryScreen.pickerTitles.video" = "Video";
 

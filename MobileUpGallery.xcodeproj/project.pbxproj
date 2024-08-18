@@ -25,7 +25,6 @@
 		812FFA022C71E534005D10B4 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 812FFA012C71E534005D10B4 /* swiftgen.yml */; };
 		812FFA122C71E88F005D10B4 /* template.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 812FFA0E2C71E88F005D10B4 /* template.stencil */; };
 		812FFA192C71E8D6005D10B4 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA172C71E8D6005D10B4 /* Localization.swift */; };
-		812FFA1A2C71E8D6005D10B4 /* Assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA182C71E8D6005D10B4 /* Assets.generated.swift */; };
 		812FFA1D2C71EA68005D10B4 /* GalleryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA1C2C71EA68005D10B4 /* GalleryScreen.swift */; };
 		812FFA1F2C71EA9F005D10B4 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA1E2C71EA9F005D10B4 /* PhotoModel.swift */; };
 		812FFA222C71EB89005D10B4 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA212C71EB89005D10B4 /* Mocks.swift */; };
@@ -35,6 +34,7 @@
 		812FFA2E2C71F5C5005D10B4 /* EmptyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA2D2C71F5C5005D10B4 /* EmptyRouter.swift */; };
 		812FFA302C71FC1C005D10B4 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA2F2C71FC1C005D10B4 /* LaunchScreen.swift */; };
 		812FFA322C7209E2005D10B4 /* SinglePhotoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA312C7209E2005D10B4 /* SinglePhotoScreen.swift */; };
+		812FFA342C720EAF005D10B4 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA332C720EAF005D10B4 /* PickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +75,6 @@
 		812FFA012C71E534005D10B4 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		812FFA0E2C71E88F005D10B4 /* template.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.stencil; sourceTree = "<group>"; };
 		812FFA172C71E8D6005D10B4 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
-		812FFA182C71E8D6005D10B4 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.generated.swift; sourceTree = "<group>"; };
 		812FFA1C2C71EA68005D10B4 /* GalleryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryScreen.swift; sourceTree = "<group>"; };
 		812FFA1E2C71EA9F005D10B4 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		812FFA212C71EB89005D10B4 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
@@ -85,6 +84,7 @@
 		812FFA2D2C71F5C5005D10B4 /* EmptyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyRouter.swift; sourceTree = "<group>"; };
 		812FFA2F2C71FC1C005D10B4 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		812FFA312C7209E2005D10B4 /* SinglePhotoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePhotoScreen.swift; sourceTree = "<group>"; };
+		812FFA332C720EAF005D10B4 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +236,6 @@
 		812FFA0F2C71E88F005D10B4 /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
-				812FFA182C71E8D6005D10B4 /* Assets.generated.swift */,
 				812FFA172C71E8D6005D10B4 /* Localization.swift */,
 				812FFA0E2C71E88F005D10B4 /* template.stencil */,
 			);
@@ -266,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				812FFA262C71EDCE005D10B4 /* PhotoImageView.swift */,
+				812FFA332C720EAF005D10B4 /* PickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -414,8 +414,8 @@
 			files = (
 				812FFA222C71EB89005D10B4 /* Mocks.swift in Sources */,
 				812FFA302C71FC1C005D10B4 /* LaunchScreen.swift in Sources */,
+				812FFA342C720EAF005D10B4 /* PickerView.swift in Sources */,
 				812FF9E72C71C34A005D10B4 /* AppDelegate.swift in Sources */,
-				812FFA1A2C71E8D6005D10B4 /* Assets.generated.swift in Sources */,
 				812FFA2C2C71F58F005D10B4 /* PreviewMock.swift in Sources */,
 				812FFA1D2C71EA68005D10B4 /* GalleryScreen.swift in Sources */,
 				812FF9BE2C71C11A005D10B4 /* LoginScreen.swift in Sources */,
