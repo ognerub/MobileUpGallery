@@ -31,4 +31,8 @@ public enum DSConstants {
     static let titleTextSize: CGFloat = 44
     /// 15
     static let buttonTextSize: CGFloat = 15
+
+    // MARK: Navigation bar
+    ///17
+    static let navTitleTextSize: CGFloat = 17
 }

@@ -12,4 +12,6 @@
 // MARK: - Gallery
 "galleryScreen.pickerTitles.photo" = "Фото";
 "galleryScreen.pickerTitles.video" = "Видео";
+"galleryScreen.navigationBar.title" = "MobileUp";
+"galleryScreen.navigationBar.exit" = "Выход";
 

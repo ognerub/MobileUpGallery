@@ -12,4 +12,6 @@
 // MARK: - Gallery
 "galleryScreen.pickerTitles.photo" = "Photo";
 "galleryScreen.pickerTitles.video" = "Video";
+"galleryScreen.navigationBar.title" = "MobileUp";
+"galleryScreen.navigationBar.exit" = "Exit";
 

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct PickerView: View {
-
     @Binding var selection: GalleryPage
 
     var body: some View {

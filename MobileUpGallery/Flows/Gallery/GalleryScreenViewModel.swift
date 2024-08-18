@@ -21,6 +21,7 @@ final class GalleryScreenViewModel: ObservableObject {
     ]
 
     @Published var photos: [PhotoModel] = Mocks.photos
+    @Published var videos: [VideoModel] = Mocks.videos
     @Published var page = GalleryPage.video
 
     private let router: UnownedRouter<AppRoute>
@@ -31,5 +32,17 @@ final class GalleryScreenViewModel: ObservableObject {
 
     func pushToSinglePhotoScreen(imageName: String) {
         router.trigger(.photo(imageName))
+    }
+
+    func pushToSingleVideoScreen(video: VideoModel) {
+        router.trigger(.video(video))
+    }
+
+    func pop() {
+        router.trigger(.pop)
+    }
+
+    func logout() {
+        router.trigger(.login)
     }
 }

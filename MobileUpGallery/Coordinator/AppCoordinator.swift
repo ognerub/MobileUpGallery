@@ -12,6 +12,8 @@ enum AppRoute: Route {
     case login
     case gallery
     case photo(String)
+    case video(VideoModel)
+    case pop
 }
 
 final class AppCoordinator: NavigationCoordinator<AppRoute> {
@@ -36,6 +38,10 @@ final class AppCoordinator: NavigationCoordinator<AppRoute> {
             return .set([buildGalleryScreen()])
         case .photo(let imageName):
             return .push(buildPhotoScreen(imageName: imageName))
+        case .video(let video):
+            return .push(buildVideoScreen(video: video))
+        case .pop:
+            return .pop()
         }
     }
 
@@ -65,6 +71,11 @@ final class AppCoordinator: NavigationCoordinator<AppRoute> {
 
     private func buildPhotoScreen(imageName: String) -> UIViewController {
         let rootView = SinglePhotoScreen(imageName: imageName)
+        return UIHostingController(rootView: rootView)
+    }
+
+    private func buildVideoScreen(video: VideoModel) -> UIViewController {
+        let rootView = SingleVideoScreen(video: video)
         return UIHostingController(rootView: rootView)
     }
 

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct LoginScreen: View {
-
     @Environment(\.colorScheme) var colorScheme
     @ObservedObject var viewModel: LoginScreenViewModel
 
@@ -21,7 +20,7 @@ struct LoginScreen: View {
         Text(Localization.LoginScreen.titleText)
             .font(Font.system(size: DSConstants.titleTextSize, weight: .bold))
             .frame(maxWidth: .infinity, alignment: .leading)
-            .foregroundColor(colorScemeColor(.black))
+            .foregroundColor(.blackPrimary)
             .padding(.horizontal, DSConstants.titleTextPadding)
             .frame(maxHeight: .infinity, alignment: .center)
     }
@@ -33,25 +32,12 @@ struct LoginScreen: View {
             Text(Localization.LoginScreen.loginButtonText)
                 .font(Font.system(size: DSConstants.buttonTextSize, weight: .medium))
                 .frame(maxWidth: .infinity, maxHeight: 52)
-                .foregroundColor(colorScemeColor(.white))
-                .background(colorScemeColor(.black))
+                .foregroundColor(.whitePrimary)
+                .background(.blackPrimary)
                 .clipShape(.rect(cornerRadius: DSConstants.defaultCornerRadius))
         })
         .padding(.horizontal, DSConstants.defaultPadding)
         .frame(maxHeight: .infinity, alignment: .bottom)
-    }
-}
-
-private extension LoginScreen {
-    func colorScemeColor(_ value: Color) -> Color {
-        let currentColor = value
-        if currentColor == Color.black {
-            return colorScheme == .dark ? Color.white: currentColor
-        } else if currentColor == Color.white {
-            return colorScheme == .dark ? Color.black: currentColor
-        } else {
-            return currentColor
-        }
     }
 }
 

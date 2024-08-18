@@ -10,6 +10,13 @@ public enum Localization {
 
     public enum GalleryScreen {
 
+        public enum NavigationBar {
+            /// Exit
+            public static let exit = localize("galleryScreen.navigationBar.exit")
+            /// MobileUp
+            public static let title = localize("galleryScreen.navigationBar.title")
+        }
+
         public enum PickerTitles {
             /// Photo
             public static let photo = localize("galleryScreen.pickerTitles.photo")
