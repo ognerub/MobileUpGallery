@@ -7,25 +7,41 @@
 
 import SwiftUI
 
-struct NavigationBarBackButtonView: View {
+public enum NavigationBarButtonType {
+    case backArrow
+    case logout
+    case share
+}
+
+struct NavigationBarButtonView: View {
 
     var action: () -> Void = { }
-    var isVisible: Bool
+    var type: NavigationBarButtonType
 
     var body: some View {
         Button(action: {
             action()
         }, label: {
-            Spacer()
-            Image(.backArrow)
-                .tint(Color(.blackPrimary))
-                    .opacity(isVisible ? 1 : 0)
+            getButtonIconView(from: type)
         })
-        .frame(width: 24, height: 24, alignment: .center)
+    }
+
+    private func getButtonIconView(from type: NavigationBarButtonType) -> some View {
+        switch type {
+        case .backArrow:
+            return AnyView(Image(.backArrow)
+                .tint(Color(.blackPrimary)))
+        case .logout:
+            return AnyView(Text(Localization.GalleryScreen.NavigationBar.exit)
+                .foregroundColor(.blackPrimary))
+        case .share:
+            return AnyView(Image(.shareButton)
+                .tint(Color(.blackPrimary)))
+        }
     }
 
 }
 
 #Preview {
-    NavigationBarBackButtonView(isVisible: true)
+    NavigationBarButtonView(action: { print("press check")}, type: .backArrow)
 }

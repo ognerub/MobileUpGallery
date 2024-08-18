@@ -37,17 +37,29 @@ struct SingleMediaScreen: View {
                 }
             }
             .navigationBarItems(
-                leading: NavigationBarBackButtonView(
+                leading: NavigationBarButtonView(
                     action: {
                         viewModel.pop()
                     },
-                    isVisible: true)
+                    type: .backArrow)
             )
+            .navigationBarItems(
+                trailing: NavigationBarButtonView(
+                    action: {
+                        print("share")
+                    },
+                    type: .share)
+            )
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar { ToolbarItem(placement: .principal) {
+                Text(Localization.GalleryScreen.NavigationBar.title)
+                .font(Font.system(size: DSConstants.navTitleTextSize, weight: .semibold)) }
+            }
         }
         .navigationBarHidden(true)
     }
 }
 
 #Preview {
-    SingleMediaScreen(viewModel: SingleMediaScreenViewModel(router: .previewMock()))
+    SingleMediaScreen(viewModel: SingleMediaScreenViewModel(router: .previewMock()), photo: Mocks.photos[0])
 }

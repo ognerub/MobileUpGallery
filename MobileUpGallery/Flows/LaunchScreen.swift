@@ -11,15 +11,14 @@ struct LaunchScreen: View {
 
     var body: some View {
         ZStack {
-            Color.black
+            Color(.black)
             Color.clear
                 .aspectRatio(1, contentMode: .fit)
                 .overlay(
                     PhotoImageView(imageURL: "ItemMockImage01")
-                        .cornerRadius(10)
                 )
                 .clipShape(Rectangle())
-                .padding(DSConstants.doublePadding)
+                .frame(width: 240, height: 240)
         }
         .ignoresSafeArea(.all)
         .frame(maxWidth: .infinity, maxHeight: .infinity)

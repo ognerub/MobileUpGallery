@@ -32,14 +32,16 @@
 		812FFA272C71EDCE005D10B4 /* PhotoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA262C71EDCE005D10B4 /* PhotoImageView.swift */; };
 		812FFA2C2C71F58F005D10B4 /* PreviewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA2B2C71F58F005D10B4 /* PreviewMock.swift */; };
 		812FFA2E2C71F5C5005D10B4 /* EmptyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA2D2C71F5C5005D10B4 /* EmptyRouter.swift */; };
-		812FFA302C71FC1C005D10B4 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA2F2C71FC1C005D10B4 /* LaunchScreen.swift */; };
 		812FFA322C7209E2005D10B4 /* SingleMediaScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA312C7209E2005D10B4 /* SingleMediaScreen.swift */; };
 		812FFA342C720EAF005D10B4 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FFA332C720EAF005D10B4 /* PickerView.swift */; };
 		817562D42C722156001E1FF4 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562D32C722156001E1FF4 /* VideoModel.swift */; };
 		817562D82C7222B8001E1FF4 /* VideoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562D72C7222B8001E1FF4 /* VideoImageView.swift */; };
 		817562DB2C7224D0001E1FF4 /* NavigationBarBackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562DA2C7224D0001E1FF4 /* NavigationBarBackButtonView.swift */; };
-		817562DF2C722C38001E1FF4 /* LogoutButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562DE2C722C38001E1FF4 /* LogoutButtonView.swift */; };
 		817562E12C722ED6001E1FF4 /* SingleMediaScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562E02C722ED6001E1FF4 /* SingleMediaScreenViewModel.swift */; };
+		817562E32C72392A001E1FF4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817562E22C72392A001E1FF4 /* Launch Screen.storyboard */; };
+		817562E52C723A78001E1FF4 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562E42C723A78001E1FF4 /* LaunchScreen.swift */; };
+		817562E72C723D34001E1FF4 /* ImagesGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562E62C723D34001E1FF4 /* ImagesGridView.swift */; };
+		817562E92C723D5A001E1FF4 /* VideosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562E82C723D5A001E1FF4 /* VideosListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,14 +89,16 @@
 		812FFA262C71EDCE005D10B4 /* PhotoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImageView.swift; sourceTree = "<group>"; };
 		812FFA2B2C71F58F005D10B4 /* PreviewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMock.swift; sourceTree = "<group>"; };
 		812FFA2D2C71F5C5005D10B4 /* EmptyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyRouter.swift; sourceTree = "<group>"; };
-		812FFA2F2C71FC1C005D10B4 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		812FFA312C7209E2005D10B4 /* SingleMediaScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleMediaScreen.swift; sourceTree = "<group>"; };
 		812FFA332C720EAF005D10B4 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		817562D32C722156001E1FF4 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		817562D72C7222B8001E1FF4 /* VideoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoImageView.swift; sourceTree = "<group>"; };
 		817562DA2C7224D0001E1FF4 /* NavigationBarBackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarBackButtonView.swift; sourceTree = "<group>"; };
-		817562DE2C722C38001E1FF4 /* LogoutButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButtonView.swift; sourceTree = "<group>"; };
 		817562E02C722ED6001E1FF4 /* SingleMediaScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleMediaScreenViewModel.swift; sourceTree = "<group>"; };
+		817562E22C72392A001E1FF4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		817562E42C723A78001E1FF4 /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		817562E62C723D34001E1FF4 /* ImagesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesGridView.swift; sourceTree = "<group>"; };
+		817562E82C723D5A001E1FF4 /* VideosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 				812FF9FB2C71E285005D10B4 /* Resources */,
 				812FF9C12C71C11B005D10B4 /* Preview Content */,
 				812FF9F52C71D25B005D10B4 /* Info.plist */,
+				817562E22C72392A001E1FF4 /* Launch Screen.storyboard */,
 			);
 			path = MobileUpGallery;
 			sourceTree = "<group>";
@@ -192,7 +197,7 @@
 		812FF9E52C71C30D005D10B4 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				812FFA2F2C71FC1C005D10B4 /* LaunchScreen.swift */,
+				817562E42C723A78001E1FF4 /* LaunchScreen.swift */,
 				812FF9FA2C71E255005D10B4 /* Login */,
 				812FFA1B2C71EA48005D10B4 /* Gallery */,
 			);
@@ -280,6 +285,8 @@
 				812FFA262C71EDCE005D10B4 /* PhotoImageView.swift */,
 				817562D72C7222B8001E1FF4 /* VideoImageView.swift */,
 				812FFA332C720EAF005D10B4 /* PickerView.swift */,
+				817562E62C723D34001E1FF4 /* ImagesGridView.swift */,
+				817562E82C723D5A001E1FF4 /* VideosListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,7 +295,6 @@
 			isa = PBXGroup;
 			children = (
 				817562DA2C7224D0001E1FF4 /* NavigationBarBackButtonView.swift */,
-				817562DE2C722C38001E1FF4 /* LogoutButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -406,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817562E32C72392A001E1FF4 /* Launch Screen.storyboard in Resources */,
 				812FF9C32C71C11B005D10B4 /* Preview Assets.xcassets in Resources */,
 				812FF9FF2C71E3BB005D10B4 /* Localizable.strings in Resources */,
 				812FF9C02C71C11B005D10B4 /* Assets.xcassets in Resources */,
@@ -436,14 +443,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				812FFA222C71EB89005D10B4 /* Mocks.swift in Sources */,
-				812FFA302C71FC1C005D10B4 /* LaunchScreen.swift in Sources */,
 				812FFA342C720EAF005D10B4 /* PickerView.swift in Sources */,
+				817562E52C723A78001E1FF4 /* LaunchScreen.swift in Sources */,
 				812FF9E72C71C34A005D10B4 /* AppDelegate.swift in Sources */,
 				812FFA2C2C71F58F005D10B4 /* PreviewMock.swift in Sources */,
 				812FFA1D2C71EA68005D10B4 /* GalleryScreen.swift in Sources */,
 				812FF9BE2C71C11A005D10B4 /* LoginScreen.swift in Sources */,
 				812FFA192C71E8D6005D10B4 /* Localization.swift in Sources */,
-				817562DF2C722C38001E1FF4 /* LogoutButtonView.swift in Sources */,
+				817562E92C723D5A001E1FF4 /* VideosListView.swift in Sources */,
 				817562D82C7222B8001E1FF4 /* VideoImageView.swift in Sources */,
 				812FF9F92C71E251005D10B4 /* LoginScreenViewModel.swift in Sources */,
 				812FFA2E2C71F5C5005D10B4 /* EmptyRouter.swift in Sources */,
@@ -451,6 +458,7 @@
 				812FF9EC2C71CE7F005D10B4 /* AppCoordinator.swift in Sources */,
 				812FF9E92C71C3E4005D10B4 /* SceneDelegate.swift in Sources */,
 				817562E12C722ED6001E1FF4 /* SingleMediaScreenViewModel.swift in Sources */,
+				817562E72C723D34001E1FF4 /* ImagesGridView.swift in Sources */,
 				817562D42C722156001E1FF4 /* VideoModel.swift in Sources */,
 				812FFA1F2C71EA9F005D10B4 /* PhotoModel.swift in Sources */,
 				812FF9F72C71DB30005D10B4 /* DSConstants.swift in Sources */,
@@ -639,7 +647,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MobileUpGallery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -673,7 +682,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MobileUpGallery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

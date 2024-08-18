@@ -23,11 +23,11 @@ struct GalleryScreen: View {
                 .tabViewStyle(.page(indexDisplayMode: .never))
             }
             .navigationBarItems(
-                trailing: LogoutButtonView(
+                trailing: NavigationBarButtonView(
                     action: {
                         viewModel.logout()
                     },
-                    isVisible: true)
+                    type: .logout)
             )
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .principal) {
@@ -41,45 +41,4 @@ struct GalleryScreen: View {
 
 #Preview {
     GalleryScreen(viewModel: GalleryScreenViewModel(router: .previewMock()))
-}
-
-struct ImagesGridView: View {
-    @ObservedObject var viewModel: GalleryScreenViewModel
-
-    var body: some View {
-        ScrollView {
-            LazyVGrid(columns: viewModel.columns, spacing: DSConstants.defaultSpacing) {
-                ForEach(viewModel.photos) { photo in
-                    Button(action: {
-                        viewModel.pushToSingleMediaScreen(photo: photo)
-                    }, label: {
-                        Color.clear
-                            .aspectRatio(1, contentMode: .fit)
-                            .overlay(
-                                PhotoImageView(imageURL: photo.url)
-                            )
-                            .clipShape(Rectangle())
-                    })
-                }
-            }
-        }
-    }
-}
-
-struct VideosListView: View {
-    @ObservedObject var viewModel: GalleryScreenViewModel
-
-    var body: some View {
-        ScrollView {
-            LazyVStack(spacing: DSConstants.defaultSpacing) {
-                ForEach(viewModel.videos) { video in
-                    Button(action: {
-                        viewModel.pushToSingleMediaScreen(video: video)
-                    }, label: {
-                        VideoImageView(video: video)
-                    })
-                }
-            }
-        }
-    }
 }
