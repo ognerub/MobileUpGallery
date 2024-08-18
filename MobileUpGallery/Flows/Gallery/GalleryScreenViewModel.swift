@@ -22,7 +22,7 @@ final class GalleryScreenViewModel: ObservableObject {
 
     @Published var photos: [PhotoModel] = Mocks.photos
     @Published var videos: [VideoModel] = Mocks.videos
-    @Published var page = GalleryPage.video
+    @Published var page = GalleryPage.photo
 
     private let router: UnownedRouter<AppRoute>
 
@@ -30,12 +30,12 @@ final class GalleryScreenViewModel: ObservableObject {
         self.router = router
     }
 
-    func pushToSinglePhotoScreen(imageName: String) {
-        router.trigger(.photo(imageName))
+    func pushToSingleMediaScreen(photo: PhotoModel) {
+        router.trigger(.media(photo, nil))
     }
 
-    func pushToSingleVideoScreen(video: VideoModel) {
-        router.trigger(.video(video))
+    func pushToSingleMediaScreen(video: VideoModel) {
+        router.trigger(.media(nil, video))
     }
 
     func pop() {

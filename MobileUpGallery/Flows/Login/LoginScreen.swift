@@ -12,8 +12,12 @@ struct LoginScreen: View {
     @ObservedObject var viewModel: LoginScreenViewModel
 
     var body: some View {
-        titleText
-        loginButton
+        NavigationView {
+            VStack {
+                titleText
+                loginButton
+            }
+        }
     }
 
     var titleText: some View {

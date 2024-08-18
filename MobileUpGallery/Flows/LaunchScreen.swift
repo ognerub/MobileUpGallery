@@ -15,7 +15,7 @@ struct LaunchScreen: View {
             Color.clear
                 .aspectRatio(1, contentMode: .fit)
                 .overlay(
-                    PhotoImageView(imageName: "ItemMockImage01")
+                    PhotoImageView(imageURL: "ItemMockImage01")
                         .cornerRadius(10)
                 )
                 .clipShape(Rectangle())

@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct PhotoImageView: View {
-    let imageName: String
+    let imageURL: String?
 
     var body: some View {
-        Image(uiImage: UIImage(named: imageName) ?? UIImage())
+        Image(uiImage: UIImage(named: imageURL ?? "") ?? UIImage())
             .resizable()
             .scaledToFill()
     }
 }
 
 #Preview {
-    PhotoImageView(imageName: "ItemMockImage01")
+    PhotoImageView(imageURL: "ItemMockImage01")
 }

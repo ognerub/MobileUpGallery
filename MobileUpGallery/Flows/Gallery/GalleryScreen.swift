@@ -11,29 +11,31 @@ struct GalleryScreen: View {
     @ObservedObject var viewModel: GalleryScreenViewModel
 
     var body: some View {
-        VStack {
-            PickerView(selection: $viewModel.page)
-                .padding(.horizontal, DSConstants.defaultPadding)
-            TabView(selection: $viewModel.page,
-                    content:  {
-                ImagesGridView(viewModel: viewModel).tag(GalleryPage.photo)
-                VideosListView(viewModel: viewModel).tag(GalleryPage.video)
-            })
-            .tabViewStyle(.page(indexDisplayMode: .never))
+        NavigationView {
+            VStack {
+                PickerView(selection: $viewModel.page)
+                    .padding(.horizontal, DSConstants.defaultPadding)
+                TabView(selection: $viewModel.page,
+                        content:  {
+                    ImagesGridView(viewModel: viewModel).tag(GalleryPage.photo)
+                    VideosListView(viewModel: viewModel).tag(GalleryPage.video)
+                })
+                .tabViewStyle(.page(indexDisplayMode: .never))
+            }
+            .navigationBarItems(
+                trailing: LogoutButtonView(
+                    action: {
+                        viewModel.logout()
+                    },
+                    isVisible: true)
+            )
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar { ToolbarItem(placement: .principal) {
+                Text(Localization.GalleryScreen.NavigationBar.title)
+                .font(Font.system(size: DSConstants.navTitleTextSize, weight: .semibold)) }
+            }
         }
-        .navigationBarItems(
-            trailing: LogoutButtonView(
-                action: {
-                    viewModel.logout()
-                },
-                isVisible: true)
-        )
-        .navigationBarHidden(false)
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar { ToolbarItem(placement: .principal) {
-            Text(Localization.GalleryScreen.NavigationBar.title)
-            .font(Font.system(size: DSConstants.navTitleTextSize, weight: .semibold)) }
-        }
+        .navigationBarHidden(true)
     }
 }
 
@@ -49,12 +51,12 @@ struct ImagesGridView: View {
             LazyVGrid(columns: viewModel.columns, spacing: DSConstants.defaultSpacing) {
                 ForEach(viewModel.photos) { photo in
                     Button(action: {
-                        viewModel.pushToSinglePhotoScreen(imageName: photo.url)
+                        viewModel.pushToSingleMediaScreen(photo: photo)
                     }, label: {
                         Color.clear
                             .aspectRatio(1, contentMode: .fit)
                             .overlay(
-                                PhotoImageView(imageName: photo.url)
+                                PhotoImageView(imageURL: photo.url)
                             )
                             .clipShape(Rectangle())
                     })
@@ -72,7 +74,7 @@ struct VideosListView: View {
             LazyVStack(spacing: DSConstants.defaultSpacing) {
                 ForEach(viewModel.videos) { video in
                     Button(action: {
-                        viewModel.pushToSingleVideoScreen(video: video)
+                        viewModel.pushToSingleMediaScreen(video: video)
                     }, label: {
                         VideoImageView(video: video)
                     })

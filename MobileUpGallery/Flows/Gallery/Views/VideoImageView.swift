@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct VideoImageView: View {
-    let video: VideoModel
+    let video: VideoModel?
 
     var body: some View {
         ZStack {
-            Image(uiImage: UIImage(named: video.url) ?? UIImage())
+            Image(uiImage: UIImage(named: video?.url ?? "") ?? UIImage())
                 .resizable()
                 .scaledToFill()
-            Text(video.title)
+            Text(video?.title ?? "")
                 .padding(.horizontal, DSConstants.fouthSpacing)
                 .padding(.vertical, DSConstants.defaultSpacing)
                 .foregroundColor(.black)
