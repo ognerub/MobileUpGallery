@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ItemMockImage01" translatesAutoresizingMaskIntoConstraints="NO" id="rDr-66-1T9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MobileUpLogo" translatesAutoresizingMaskIntoConstraints="NO" id="rDr-66-1T9">
                                 <rect key="frame" x="76.666666666666686" y="318.66666666666669" width="240" height="240.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="g6c-HF-H3C"/>
@@ -25,7 +25,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="rDr-66-1T9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="12.666666666666742" id="2Wv-Iw-R6N"/>
                             <constraint firstItem="rDr-66-1T9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fpx-U1-orh"/>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ItemMockImage01" width="2000" height="1333"/>
+        <image name="MobileUpLogo" width="1024" height="1024"/>
     </resources>
 </document>
