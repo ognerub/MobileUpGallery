@@ -52,6 +52,7 @@
 		817562FF2C736DCA001E1FF4 /* PhotosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562FE2C736DCA001E1FF4 /* PhotosService.swift */; };
 		817563012C737B79001E1FF4 /* PhotoResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817563002C737B79001E1FF4 /* PhotoResponseModel.swift */; };
 		817563042C737F22001E1FF4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 817563032C737F22001E1FF4 /* Kingfisher */; };
+		817563062C7384E5001E1FF4 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817563052C7384E5001E1FF4 /* ShareSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		817562FC2C736953001E1FF4 /* OAuthTokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthTokenStorage.swift; sourceTree = "<group>"; };
 		817562FE2C736DCA001E1FF4 /* PhotosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosService.swift; sourceTree = "<group>"; };
 		817563002C737B79001E1FF4 /* PhotoResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResponseModel.swift; sourceTree = "<group>"; };
+		817563052C7384E5001E1FF4 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +308,7 @@
 		812FFA252C71EDB3005D10B4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				817563052C7384E5001E1FF4 /* ShareSheet.swift */,
 				812FFA262C71EDCE005D10B4 /* PhotoImageView.swift */,
 				817562D72C7222B8001E1FF4 /* VideoImageView.swift */,
 				812FFA332C720EAF005D10B4 /* PickerView.swift */,
@@ -513,6 +516,7 @@
 				817562E12C722ED6001E1FF4 /* SingleMediaScreenViewModel.swift in Sources */,
 				817562E72C723D34001E1FF4 /* ImagesGridView.swift in Sources */,
 				817562FF2C736DCA001E1FF4 /* PhotosService.swift in Sources */,
+				817563062C7384E5001E1FF4 /* ShareSheet.swift in Sources */,
 				817563012C737B79001E1FF4 /* PhotoResponseModel.swift in Sources */,
 				817562D42C722156001E1FF4 /* VideoModel.swift in Sources */,
 				812FFA1F2C71EA9F005D10B4 /* PhotoModel.swift in Sources */,
