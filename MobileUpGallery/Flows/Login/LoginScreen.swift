@@ -29,11 +29,13 @@ struct LoginScreen: View {
                 }
             })
         }
-        .onChange(of: viewModel.currentURL, perform: { value in
+        .onChange(of: viewModel.currentUrlString, perform: { value in
             Task {
                 do {
-                    let accessToken = try await viewModel.getAccessToken().accessToken
-                    
+                    let accessToken: String? = try await viewModel.getAccessToken(from: viewModel.currentUrlString).accessToken
+                    if accessToken != nil {
+                        viewModel.pushToGalleryScreen()
+                    }
                 } catch {
                     print(error.localizedDescription)
                 }
@@ -52,7 +54,6 @@ struct LoginScreen: View {
 
     var loginButton: some View {
         Button(action: {
-            //viewModel.pushToGalleryScreen()
             viewModel.isWebViewPresented = true
         }, label: {
             Text(Localization.LoginScreen.loginButtonText)
@@ -68,5 +69,5 @@ struct LoginScreen: View {
 }
 
 #Preview {
-    LoginScreen(viewModel: LoginScreenViewModel(router: .previewMock()))
+    LoginScreen(viewModel: LoginScreenViewModel(router: .previewMock(), networkService: NetworkService()))
 }

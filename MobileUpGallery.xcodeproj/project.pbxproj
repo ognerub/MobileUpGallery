@@ -46,6 +46,7 @@
 		817562F02C72816A001E1FF4 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562EF2C72816A001E1FF4 /* WebView.swift */; };
 		817562F32C72FD6C001E1FF4 /* WebCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562F22C72FD6C001E1FF4 /* WebCoordinator.swift */; };
 		817562F52C735787001E1FF4 /* ExchangeAuthorizationCodeResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562F42C735787001E1FF4 /* ExchangeAuthorizationCodeResponseModel.swift */; };
+		817562F82C736614001E1FF4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562F72C736614001E1FF4 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		817562EF2C72816A001E1FF4 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		817562F22C72FD6C001E1FF4 /* WebCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebCoordinator.swift; sourceTree = "<group>"; };
 		817562F42C735787001E1FF4 /* ExchangeAuthorizationCodeResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAuthorizationCodeResponseModel.swift; sourceTree = "<group>"; };
+		817562F72C736614001E1FF4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				817562EC2C7278FC001E1FF4 /* NetworkConstants.swift */,
+				817562F72C736614001E1FF4 /* NetworkService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				817562E52C723A78001E1FF4 /* LaunchScreen.swift in Sources */,
 				812FF9E72C71C34A005D10B4 /* AppDelegate.swift in Sources */,
 				812FFA2C2C71F58F005D10B4 /* PreviewMock.swift in Sources */,
+				817562F82C736614001E1FF4 /* NetworkService.swift in Sources */,
 				812FFA1D2C71EA68005D10B4 /* GalleryScreen.swift in Sources */,
 				812FF9BE2C71C11A005D10B4 /* LoginScreen.swift in Sources */,
 				812FFA192C71E8D6005D10B4 /* Localization.swift in Sources */,
