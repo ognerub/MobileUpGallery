@@ -44,6 +44,7 @@
 		817562E92C723D5A001E1FF4 /* VideosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562E82C723D5A001E1FF4 /* VideosListView.swift */; };
 		817562ED2C7278FC001E1FF4 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562EC2C7278FC001E1FF4 /* NetworkConstants.swift */; };
 		817562F02C72816A001E1FF4 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562EF2C72816A001E1FF4 /* WebView.swift */; };
+		817562F32C72FD6C001E1FF4 /* WebCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562F22C72FD6C001E1FF4 /* WebCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		817562E82C723D5A001E1FF4 /* VideosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosListView.swift; sourceTree = "<group>"; };
 		817562EC2C7278FC001E1FF4 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		817562EF2C72816A001E1FF4 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		817562F22C72FD6C001E1FF4 /* WebCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				817562EF2C72816A001E1FF4 /* WebView.swift */,
+				817562F22C72FD6C001E1FF4 /* WebCoordinator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				812FFA322C7209E2005D10B4 /* SingleMediaScreen.swift in Sources */,
 				812FF9EC2C71CE7F005D10B4 /* AppCoordinator.swift in Sources */,
 				812FF9E92C71C3E4005D10B4 /* SceneDelegate.swift in Sources */,
+				817562F32C72FD6C001E1FF4 /* WebCoordinator.swift in Sources */,
 				817562E12C722ED6001E1FF4 /* SingleMediaScreenViewModel.swift in Sources */,
 				817562E72C723D34001E1FF4 /* ImagesGridView.swift in Sources */,
 				817562D42C722156001E1FF4 /* VideoModel.swift in Sources */,

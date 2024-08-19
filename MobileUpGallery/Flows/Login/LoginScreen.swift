@@ -19,8 +19,13 @@ struct LoginScreen: View {
                 loginButton
             }
             .sheet(isPresented: $viewModel.isWebViewPresented, content: {
-                if let urlString: URL = viewModel.createWebViewUrl() {
-                    WebView(url: urlString, webView: WKWebView())
+                ZStack {
+                    viewModel.webView
+                    if viewModel.isWebViewLoading {
+                        ProgressView()
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .ignoresSafeArea(.all)
+                    }
                 }
             })
         }
@@ -53,5 +58,5 @@ struct LoginScreen: View {
 }
 
 #Preview {
-    LoginScreen(viewModel: LoginScreenViewModel(router: .previewMock()))
+    LoginScreen(viewModel: LoginScreenViewModel(router: .previewMock(), webView: WebView(url: URL(string: "vk.com"))))
 }

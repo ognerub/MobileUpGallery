@@ -8,23 +8,44 @@
 import SwiftUI
 import WebKit
 
-struct WebView: Sendable, UIViewRepresentable {
+protocol WebViewProtocol: AnyObject {
+    func sendCurrentURL(string: String)
+    func sendWebViewStatus(isLoading: Bool)
+    func sendWebViewVisibility(isVisible: Bool)
+}
 
-    let url: URL
+struct WebView: UIViewRepresentable {
 
-    private let webView: WKWebView
+    var delegate: WebViewProtocol?
+    var webView: WKWebView = {
+        let configuration = WKWebViewConfiguration()
+        var webView = WKWebView(frame: .zero, configuration: configuration)
+        return webView
+    }()
+    private var url: URL?
 
-    init(url: URL, webView: WKWebView) {
+    init(url: URL?) {
         self.url = url
-        self.webView = webView
+    }
+
+    func makeCoordinator() -> WebViewCoordinator {
+        return WebViewCoordinator(self)
     }
 
     func makeUIView(context: Context) -> WKWebView {
-        webView.load(URLRequest(url: url))
+        webView.navigationDelegate = context.coordinator
         return webView
     }
 
-    func updateUIView(_ uiView: WKWebView, context: Context) {
+    func updateUIView(_ webView: WKWebView, context: Context) {
+        guard let url = url else { return }
+        let request = URLRequest(url: url)
+        webView.load(request)
+    }
 
+    func loadURL(urlString: String) {
+        guard let url = URL(string: urlString) else { return }
+        let request = URLRequest(url: url)
+        webView.load(request)
     }
 }
