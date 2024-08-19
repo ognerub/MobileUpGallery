@@ -41,11 +41,7 @@ final class NetworkService: NetworkServiceProtocol {
             let (data, _) = try await urlSession.data(for: request)
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
-            do {
-                responseModel = try decoder.decode(ExchangeAuthorizationCodeResponseModel.self, from: data)
-            } catch {
-                print(error.localizedDescription)
-            }
+            responseModel = try decoder.decode(ExchangeAuthorizationCodeResponseModel.self, from: data)
             return responseModel
         }
         return responseModel

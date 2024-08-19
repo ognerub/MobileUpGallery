@@ -26,5 +26,5 @@ struct VideosListView: View {
 }
 
 #Preview {
-    VideosListView(viewModel: GalleryScreenViewModel(router: .previewMock()))
+    VideosListView(viewModel: GalleryScreenViewModel(router: .previewMock(), photosService: PhotosService()))
 }

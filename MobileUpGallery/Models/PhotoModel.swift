@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct PhotoModel: Identifiable {
+struct PhotoModel: Identifiable, Decodable {
     let id: UUID
     let title: String
     let date: String
     let url: String
+    let thrumb: String
 }

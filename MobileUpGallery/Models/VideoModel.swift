@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct VideoModel: Identifiable {
+struct VideoModel: Identifiable, Decodable {
     let id: UUID
     let title: String
     let date: String

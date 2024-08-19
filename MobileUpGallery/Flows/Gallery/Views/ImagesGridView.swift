@@ -20,7 +20,7 @@ struct ImagesGridView: View {
                         Color.clear
                             .aspectRatio(1, contentMode: .fit)
                             .overlay(
-                                PhotoImageView(imageURL: photo.url)
+                                PhotoImageView(imageURL: photo.thrumb)
                             )
                             .clipShape(Rectangle())
                     })
@@ -31,5 +31,5 @@ struct ImagesGridView: View {
 }
 
 #Preview {
-    ImagesGridView(viewModel: GalleryScreenViewModel(router: .previewMock()))
+    ImagesGridView(viewModel: GalleryScreenViewModel(router: .previewMock(), photosService: PhotosService()))
 }

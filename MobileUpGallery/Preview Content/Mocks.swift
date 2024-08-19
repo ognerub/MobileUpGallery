@@ -13,49 +13,57 @@ public enum Mocks {
             id: UUID(),
             title: "This is first photo",
             date: "25-may-2024",
-            url: "ItemMockImage01"
+            url: "ItemMockImage01",
+            thrumb: "ItemMockImage01"
         ),
         PhotoModel(
             id: UUID(),
             title: "This is second photo, with long writen text, that should be automatically cutted",
             date: "10-may-2024",
-            url: "ItemMockImage02"
+            url: "ItemMockImage02",
+            thrumb: "ItemMockImage02"
         ),
         PhotoModel(
             id: UUID(),
             title: "This is third photo",
             date: "07-april-2024",
-            url: "ItemMockImage03"
+            url: "ItemMockImage03",
+            thrumb: "ItemMockImage03"
         ),
         PhotoModel(
             id: UUID(),
             title: "This is fouth photo",
             date: "20-march-2024",
-            url: "ItemMockImage04"
+            url: "ItemMockImage04",
+            thrumb: "ItemMockImage04"
         ),
         PhotoModel(
             id: UUID(),
             title: "This is fifth photo",
             date: "01-august-2024",
-            url: "ItemMockImage05"
+            url: "ItemMockImage05",
+            thrumb: "ItemMockImage05"
         ),
         PhotoModel(
             id: UUID(),
             title: "This is six photo",
             date: "23-february-2024",
-            url: "ItemMockImage06"
+            url: "ItemMockImage06",
+            thrumb: "ItemMockImage06"
         ),
         PhotoModel(
             id: UUID(),
             title: "This is seventh photo",
             date: "21-january-2024",
-            url: "ItemMockImage07"
+            url: "ItemMockImage07",
+            thrumb: "ItemMockImage07"
         ),
         PhotoModel(
             id: UUID(),
             title: "This is eight photo",
             date: "08-june-2024",
-            url: "ItemMockImage08"
+            url: "ItemMockImage08",
+            thrumb: "ItemMockImage08"
         )
     ]
 

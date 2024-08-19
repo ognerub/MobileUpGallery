@@ -36,9 +36,16 @@ struct GalleryScreen: View {
             }
         }
         .navigationBarHidden(true)
+        .task {
+            do {
+                try await viewModel.getPhotos()
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     }
 }
 
 #Preview {
-    GalleryScreen(viewModel: GalleryScreenViewModel(router: .previewMock()))
+    GalleryScreen(viewModel: GalleryScreenViewModel(router: .previewMock(), photosService: PhotosService()))
 }

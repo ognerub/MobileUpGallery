@@ -62,7 +62,7 @@ final class AppCoordinator: NavigationCoordinator<AppRoute> {
     }
 
     private func buildGalleryScreen() -> UIViewController {
-        let viewModel = GalleryScreenViewModel(router: unownedRouter)
+        let viewModel = GalleryScreenViewModel(router: unownedRouter, photosService: PhotosService())
         let rootView = GalleryScreen(viewModel: viewModel)
         return UIHostingController(rootView: rootView)
     }
