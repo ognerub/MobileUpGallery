@@ -33,7 +33,8 @@ struct LoginScreen: View {
             Task {
                 do {
                     let accessToken: String? = try await viewModel.getAccessToken(from: viewModel.currentUrlString).accessToken
-                    if accessToken != nil {
+                    if let accessToken {
+                        viewModel.saveOAuthToken(accessToken)
                         viewModel.pushToGalleryScreen()
                     }
                 } catch {
@@ -54,7 +55,11 @@ struct LoginScreen: View {
 
     var loginButton: some View {
         Button(action: {
-            viewModel.isWebViewPresented = true
+            if viewModel.checkOAuthTokenIsEmpty() {
+                viewModel.isWebViewPresented = true
+            } else {
+                viewModel.pushToGalleryScreen()
+            }
         }, label: {
             Text(Localization.LoginScreen.loginButtonText)
                 .font(Font.system(size: DSConstants.buttonTextSize, weight: .medium))

@@ -47,6 +47,8 @@
 		817562F32C72FD6C001E1FF4 /* WebCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562F22C72FD6C001E1FF4 /* WebCoordinator.swift */; };
 		817562F52C735787001E1FF4 /* ExchangeAuthorizationCodeResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562F42C735787001E1FF4 /* ExchangeAuthorizationCodeResponseModel.swift */; };
 		817562F82C736614001E1FF4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562F72C736614001E1FF4 /* NetworkService.swift */; };
+		817562FB2C73692D001E1FF4 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 817562FA2C73692D001E1FF4 /* SwiftKeychainWrapper */; };
+		817562FD2C736953001E1FF4 /* OAuthTokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562FC2C736953001E1FF4 /* OAuthTokenStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,7 @@
 		817562F22C72FD6C001E1FF4 /* WebCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebCoordinator.swift; sourceTree = "<group>"; };
 		817562F42C735787001E1FF4 /* ExchangeAuthorizationCodeResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAuthorizationCodeResponseModel.swift; sourceTree = "<group>"; };
 		817562F72C736614001E1FF4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		817562FC2C736953001E1FF4 /* OAuthTokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthTokenStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,7 @@
 			files = (
 				812FF9F12C71CFBC005D10B4 /* XCoordinatorCombine in Frameworks */,
 				812FF9EF2C71CFBC005D10B4 /* XCoordinator in Frameworks */,
+				817562FB2C73692D001E1FF4 /* SwiftKeychainWrapper in Frameworks */,
 				812FF9F32C71CFBC005D10B4 /* XCoordinatorRx in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +321,7 @@
 			children = (
 				817562EC2C7278FC001E1FF4 /* NetworkConstants.swift */,
 				817562F72C736614001E1FF4 /* NetworkService.swift */,
+				817562FC2C736953001E1FF4 /* OAuthTokenStorage.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -350,6 +355,7 @@
 				812FF9EE2C71CFBC005D10B4 /* XCoordinator */,
 				812FF9F02C71CFBC005D10B4 /* XCoordinatorCombine */,
 				812FF9F22C71CFBC005D10B4 /* XCoordinatorRx */,
+				817562FA2C73692D001E1FF4 /* SwiftKeychainWrapper */,
 			);
 			productName = MobileUpGallery;
 			productReference = 812FF9B82C71C11A005D10B4 /* MobileUpGallery.app */;
@@ -426,6 +432,7 @@
 			mainGroup = 812FF9AF2C71C11A005D10B4;
 			packageReferences = (
 				812FF9ED2C71CFBC005D10B4 /* XCRemoteSwiftPackageReference "XCoordinator" */,
+				817562F92C73692D001E1FF4 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 			);
 			productRefGroup = 812FF9B92C71C11A005D10B4 /* Products */;
 			projectDirPath = "";
@@ -485,6 +492,7 @@
 				812FFA192C71E8D6005D10B4 /* Localization.swift in Sources */,
 				817562F02C72816A001E1FF4 /* WebView.swift in Sources */,
 				817562E92C723D5A001E1FF4 /* VideosListView.swift in Sources */,
+				817562FD2C736953001E1FF4 /* OAuthTokenStorage.swift in Sources */,
 				817562D82C7222B8001E1FF4 /* VideoImageView.swift in Sources */,
 				812FF9F92C71E251005D10B4 /* LoginScreenViewModel.swift in Sources */,
 				812FFA2E2C71F5C5005D10B4 /* EmptyRouter.swift in Sources */,
@@ -866,6 +874,14 @@
 				minimumVersion = 2.2.1;
 			};
 		};
+		817562F92C73692D001E1FF4 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -883,6 +899,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 812FF9ED2C71CFBC005D10B4 /* XCRemoteSwiftPackageReference "XCoordinator" */;
 			productName = XCoordinatorRx;
+		};
+		817562FA2C73692D001E1FF4 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 817562F92C73692D001E1FF4 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

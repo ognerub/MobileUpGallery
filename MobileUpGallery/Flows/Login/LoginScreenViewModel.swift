@@ -16,7 +16,8 @@ final class LoginScreenViewModel: ObservableObject, WebViewProtocol {
     @Published var isWebViewPresented: Bool = false
 
     private let router: UnownedRouter<AppRoute>
-    let networkService: NetworkServiceProtocol
+    private let networkService: NetworkServiceProtocol
+    private let storage = OAuthTokenStorage.shared
 
     init(router: UnownedRouter<AppRoute>, networkService: NetworkServiceProtocol) {
         self.router = router
@@ -39,6 +40,14 @@ final class LoginScreenViewModel: ObservableObject, WebViewProtocol {
 
     func sendWebViewVisibility(isVisible: Bool) {
         self.isWebViewPresented = isVisible
+    }
+
+    func saveOAuthToken(_ token: String) {
+        storage.token = token
+    }
+
+    func checkOAuthTokenIsEmpty() -> Bool {
+        return storage.token == nil
     }
 
     func getAccessToken(from currentUrlString: String) async throws -> ExchangeAuthorizationCodeResponseModel {

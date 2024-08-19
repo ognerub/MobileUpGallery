@@ -25,6 +25,7 @@ final class GalleryScreenViewModel: ObservableObject {
     @Published var page = GalleryPage.photo
 
     private let router: UnownedRouter<AppRoute>
+    private let storage = OAuthTokenStorage.shared
 
     init(router: UnownedRouter<AppRoute>) {
         self.router = router
@@ -43,6 +44,7 @@ final class GalleryScreenViewModel: ObservableObject {
     }
 
     func logout() {
+        storage.clearToken()
         router.trigger(.login)
     }
 }
