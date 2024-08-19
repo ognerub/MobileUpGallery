@@ -22,7 +22,6 @@ final class WebViewCoordinator: NSObject, WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         if let url = webView.url?.absoluteString {
-            parent.delegate?.sendCurrentURL(string: url)
             parent.delegate?.sendWebViewStatus(isLoading: true)
         }
     }

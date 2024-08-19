@@ -45,6 +45,7 @@
 		817562ED2C7278FC001E1FF4 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562EC2C7278FC001E1FF4 /* NetworkConstants.swift */; };
 		817562F02C72816A001E1FF4 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562EF2C72816A001E1FF4 /* WebView.swift */; };
 		817562F32C72FD6C001E1FF4 /* WebCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562F22C72FD6C001E1FF4 /* WebCoordinator.swift */; };
+		817562F52C735787001E1FF4 /* ExchangeAuthorizationCodeResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817562F42C735787001E1FF4 /* ExchangeAuthorizationCodeResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		817562EC2C7278FC001E1FF4 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		817562EF2C72816A001E1FF4 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		817562F22C72FD6C001E1FF4 /* WebCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebCoordinator.swift; sourceTree = "<group>"; };
+		817562F42C735787001E1FF4 /* ExchangeAuthorizationCodeResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAuthorizationCodeResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +285,7 @@
 			children = (
 				812FFA1E2C71EA9F005D10B4 /* PhotoModel.swift */,
 				817562D32C722156001E1FF4 /* VideoModel.swift */,
+				817562F42C735787001E1FF4 /* ExchangeAuthorizationCodeResponseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				812FF9F72C71DB30005D10B4 /* DSConstants.swift in Sources */,
 				812FFA272C71EDCE005D10B4 /* PhotoImageView.swift in Sources */,
 				817562DB2C7224D0001E1FF4 /* NavigationBarBackButtonView.swift in Sources */,
+				817562F52C735787001E1FF4 /* ExchangeAuthorizationCodeResponseModel.swift in Sources */,
 				812FFA242C71EC1F005D10B4 /* GalleryScreenViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

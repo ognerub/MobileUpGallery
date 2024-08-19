@@ -29,6 +29,16 @@ struct LoginScreen: View {
                 }
             })
         }
+        .onChange(of: viewModel.currentURL, perform: { value in
+            Task {
+                do {
+                    let accessToken = try await viewModel.getAccessToken().accessToken
+                    
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        })
     }
 
     var titleText: some View {
@@ -58,5 +68,5 @@ struct LoginScreen: View {
 }
 
 #Preview {
-    LoginScreen(viewModel: LoginScreenViewModel(router: .previewMock(), webView: WebView(url: URL(string: "vk.com"))))
+    LoginScreen(viewModel: LoginScreenViewModel(router: .previewMock()))
 }
