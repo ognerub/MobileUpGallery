@@ -1,5 +1,5 @@
 {
-  "originHash" : "4ca581c1c6ae00adbc5549bfd4d1b832039109d6cca0e2cd0c810012e0dd052f",
+  "originHash" : "bbad795256d8bedeffa6d8ccf0c3edf19ae7b79d381bdf8b0a5bfe9deedf39f8",
   "pins" : [
     {
       "identity" : "kingfisher",
@@ -26,6 +26,15 @@
       "state" : {
         "revision" : "185a3165346a03767101c4f62e9a545a0fe0530f",
         "version" : "4.0.1"
+      }
+    },
+    {
+      "identity" : "swiftuimodal",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nonameplum/SwiftUIModal.git",
+      "state" : {
+        "revision" : "cd89b0f163843af3b621fc43e778cde918ebf977",
+        "version" : "1.0.3"
       }
     },
     {

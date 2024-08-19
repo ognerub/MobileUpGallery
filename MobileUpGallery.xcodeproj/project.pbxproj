@@ -53,6 +53,7 @@
 		817563012C737B79001E1FF4 /* PhotoResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817563002C737B79001E1FF4 /* PhotoResponseModel.swift */; };
 		817563042C737F22001E1FF4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 817563032C737F22001E1FF4 /* Kingfisher */; };
 		817563062C7384E5001E1FF4 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817563052C7384E5001E1FF4 /* ShareSheet.swift */; };
+		8175630B2C73B8F8001E1FF4 /* SwiftUIModal in Frameworks */ = {isa = PBXBuildFile; productRef = 8175630A2C73B8F8001E1FF4 /* SwiftUIModal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8175630B2C73B8F8001E1FF4 /* SwiftUIModal in Frameworks */,
 				812FF9F12C71CFBC005D10B4 /* XCoordinatorCombine in Frameworks */,
 				812FF9EF2C71CFBC005D10B4 /* XCoordinator in Frameworks */,
 				817562FB2C73692D001E1FF4 /* SwiftKeychainWrapper in Frameworks */,
@@ -368,6 +370,7 @@
 				812FF9F22C71CFBC005D10B4 /* XCoordinatorRx */,
 				817562FA2C73692D001E1FF4 /* SwiftKeychainWrapper */,
 				817563032C737F22001E1FF4 /* Kingfisher */,
+				8175630A2C73B8F8001E1FF4 /* SwiftUIModal */,
 			);
 			productName = MobileUpGallery;
 			productReference = 812FF9B82C71C11A005D10B4 /* MobileUpGallery.app */;
@@ -446,6 +449,7 @@
 				812FF9ED2C71CFBC005D10B4 /* XCRemoteSwiftPackageReference "XCoordinator" */,
 				817562F92C73692D001E1FF4 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 				817563022C737F22001E1FF4 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				817563092C73B8F8001E1FF4 /* XCRemoteSwiftPackageReference "SwiftUIModal" */,
 			);
 			productRefGroup = 812FF9B92C71C11A005D10B4 /* Products */;
 			projectDirPath = "";
@@ -906,6 +910,14 @@
 				minimumVersion = 7.12.0;
 			};
 		};
+		817563092C73B8F8001E1FF4 /* XCRemoteSwiftPackageReference "SwiftUIModal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nonameplum/SwiftUIModal.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -933,6 +945,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 817563022C737F22001E1FF4 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		8175630A2C73B8F8001E1FF4 /* SwiftUIModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 817563092C73B8F8001E1FF4 /* XCRemoteSwiftPackageReference "SwiftUIModal" */;
+			productName = SwiftUIModal;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

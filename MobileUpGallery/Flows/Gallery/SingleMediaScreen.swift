@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Kingfisher
+import SwiftUIModal
 
 struct SingleMediaScreen: View {
 
@@ -56,9 +56,11 @@ struct SingleMediaScreen: View {
                 Text(Localization.GalleryScreen.NavigationBar.title)
                 .font(Font.system(size: DSConstants.navTitleTextSize, weight: .semibold)) }
             }
-            .sheet(isPresented: $viewModel.isShowingShareSheet, content: {
+            .bottomSheet(isPresented: $viewModel.isShowingShareSheet, content: {
                 let image = viewModel.getImage(from: photo?.url)
-                ShareSheet(items: [image])
+                if let url = URL(string: photo?.url ?? "") {
+                    ShareSheet(items: [image, url])
+                }
             })
         }
         .navigationBarHidden(true)
