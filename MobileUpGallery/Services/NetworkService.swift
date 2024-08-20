@@ -10,6 +10,7 @@ import Foundation
 protocol NetworkServiceProtocol: AnyObject {
     func getAccessToken(from currentUrlString: String) async throws -> ExchangeAuthorizationCodeResponseModel
     func createWebViewUrl() -> URL?
+    func createVkIdURL() -> URL?
 }
 
 final class NetworkService: NetworkServiceProtocol {
@@ -18,6 +19,20 @@ final class NetworkService: NetworkServiceProtocol {
 
     init(urlSession: URLSession = .shared) {
         self.urlSession = urlSession
+    }
+
+    func createVkIdURL() -> URL? {
+        var components = URLComponents(string: "https://id.vk.com/authorize")
+        components?.queryItems = [
+        URLQueryItem(name: "state", value: "state"),
+        URLQueryItem(name: NetworkConstants.response_type.name, value: NetworkConstants.response_type.description),
+        URLQueryItem(name: "code_challenge", value: "VT6yRsqMDL8EgEfcGmtWVaaLzTw5KcuKBoGEmfDBJaw"),
+        URLQueryItem(name: "code_challenge_method", value: "s256"),
+        URLQueryItem(name: NetworkConstants.client_id.name, value: NetworkConstants.client_id.description),
+        URLQueryItem(name: NetworkConstants.redirect_uri.name, value: NetworkConstants.redirect_uri.description)
+        ]
+        let url = components?.url
+        return url
     }
 
     func createWebViewUrl() -> URL? {

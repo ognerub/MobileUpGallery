@@ -7,6 +7,8 @@
 
 import SwiftUI
 import WebKit
+import VKSdkFramework
+import VKID
 
 struct LoginScreen: View {
     @Environment(\.colorScheme) var colorScheme
@@ -55,11 +57,16 @@ struct LoginScreen: View {
 
     var loginButton: some View {
         Button(action: {
-            if viewModel.checkOAuthTokenIsEmpty() {
-                viewModel.isWebViewPresented = true
-            } else {
-                viewModel.pushToGalleryScreen()
-            }
+            
+            viewModel.presentBottomSheet()
+
+//            viewModel.initiateVKLogin()
+
+            //            if viewModel.checkOAuthTokenIsEmpty() {
+            //                viewModel.isWebViewPresented = true
+            //            } else {
+            //                viewModel.pushToGalleryScreen()
+            //            }
         }, label: {
             Text(Localization.LoginScreen.loginButtonText)
                 .font(Font.system(size: DSConstants.buttonTextSize, weight: .medium))

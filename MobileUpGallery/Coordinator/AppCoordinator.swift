@@ -7,6 +7,7 @@
 import UIKit
 import SwiftUI
 import XCoordinator
+import VKID
 
 enum AppRoute: Route {
     case launch
@@ -52,6 +53,7 @@ final class AppCoordinator: NavigationCoordinator<AppRoute> {
     }
 
     private func buildLoginScreen() -> UIViewController {
+
         let rootView = LoginScreen(viewModel: LoginScreenViewModel(router: unownedRouter, networkService: NetworkService()))
         let vc = UIHostingController(rootView: rootView)
         return vc

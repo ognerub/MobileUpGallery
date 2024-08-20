@@ -4,6 +4,23 @@
 <dict>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This app requires to access your photo library to save images</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>vkauthorize-silent</string>
+    </array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>auth_callback</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>vk52164659</string>
+			</array>
+		</dict>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -24,7 +41,7 @@
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>
-		<string>WhitePrimaryColor</string>
+		<string>BlackPrimaryColor</string>
 		<key>UILaunchScreen</key>
 		<dict/>
 	</dict>

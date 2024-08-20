@@ -54,6 +54,10 @@
 		817563042C737F22001E1FF4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 817563032C737F22001E1FF4 /* Kingfisher */; };
 		817563062C7384E5001E1FF4 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817563052C7384E5001E1FF4 /* ShareSheet.swift */; };
 		8175630B2C73B8F8001E1FF4 /* SwiftUIModal in Frameworks */ = {isa = PBXBuildFile; productRef = 8175630A2C73B8F8001E1FF4 /* SwiftUIModal */; };
+		8175630E2C73C08B001E1FF4 /* VKID in Frameworks */ = {isa = PBXBuildFile; productRef = 8175630D2C73C08B001E1FF4 /* VKID */; };
+		817563102C73C08B001E1FF4 /* VKIDCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8175630F2C73C08B001E1FF4 /* VKIDCore */; };
+		81FFE5962C74D10A00FB7B9C /* VKSdkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81FFE58F2C74CDE300FB7B9C /* VKSdkFramework.framework */; };
+		81FFE59A2C74DE8100FB7B9C /* VKIDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFE5992C74DE8100FB7B9C /* VKIDManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 812FF9B72C71C11A005D10B4;
 			remoteInfo = MobileUpGallery;
+		};
+		81FFE58A2C74CDE300FB7B9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81FFE5832C74CDE300FB7B9C /* VK-ios-sdk.xcodeproj 16-12-30-528.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3C7542D182133CC00964716;
+			remoteInfo = VKSdk;
+		};
+		81FFE58C2C74CDE300FB7B9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81FFE5832C74CDE300FB7B9C /* VK-ios-sdk.xcodeproj 16-12-30-528.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3BACC401865905B003158DA;
+			remoteInfo = VKSdkResources;
+		};
+		81FFE58E2C74CDE300FB7B9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81FFE5832C74CDE300FB7B9C /* VK-ios-sdk.xcodeproj 16-12-30-528.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F34670311B8B7C5A003EF74B;
+			remoteInfo = VKSdkFramework;
+		};
+		81FFE5902C74CDE300FB7B9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81FFE5832C74CDE300FB7B9C /* VK-ios-sdk.xcodeproj 16-12-30-528.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3C58CCD1D213B2C005E94B5;
+			remoteInfo = VKSdkTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -120,6 +152,8 @@
 		817562FE2C736DCA001E1FF4 /* PhotosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosService.swift; sourceTree = "<group>"; };
 		817563002C737B79001E1FF4 /* PhotoResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResponseModel.swift; sourceTree = "<group>"; };
 		817563052C7384E5001E1FF4 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		81FFE5832C74CDE300FB7B9C /* VK-ios-sdk.xcodeproj 16-12-30-528.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "VK-ios-sdk.xcodeproj 16-12-30-528.xcodeproj"; path = "../Downloads/vk-ios-sdk-master/VK-ios-sdk.xcodeproj 16-12-30-528.xcodeproj"; sourceTree = "<group>"; };
+		81FFE5992C74DE8100FB7B9C /* VKIDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKIDManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,11 +162,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8175630B2C73B8F8001E1FF4 /* SwiftUIModal in Frameworks */,
+				81FFE5962C74D10A00FB7B9C /* VKSdkFramework.framework in Frameworks */,
 				812FF9F12C71CFBC005D10B4 /* XCoordinatorCombine in Frameworks */,
 				812FF9EF2C71CFBC005D10B4 /* XCoordinator in Frameworks */,
 				817562FB2C73692D001E1FF4 /* SwiftKeychainWrapper in Frameworks */,
 				812FF9F32C71CFBC005D10B4 /* XCoordinatorRx in Frameworks */,
 				817563042C737F22001E1FF4 /* Kingfisher in Frameworks */,
+				8175630E2C73C08B001E1FF4 /* VKID in Frameworks */,
+				817563102C73C08B001E1FF4 /* VKIDCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +197,9 @@
 				812FF9BA2C71C11A005D10B4 /* MobileUpGallery */,
 				812FF9CB2C71C11B005D10B4 /* MobileUpGalleryTests */,
 				812FF9D52C71C11B005D10B4 /* MobileUpGalleryUITests */,
+				81FFE5832C74CDE300FB7B9C /* VK-ios-sdk.xcodeproj 16-12-30-528.xcodeproj */,
 				812FF9B92C71C11A005D10B4 /* Products */,
+				81FFE5922C74CE1B00FB7B9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -244,6 +283,7 @@
 			children = (
 				812FF9E62C71C34A005D10B4 /* AppDelegate.swift */,
 				812FF9E82C71C3E4005D10B4 /* SceneDelegate.swift */,
+				81FFE5992C74DE8100FB7B9C /* VKIDManager.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -348,6 +388,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		81FFE5842C74CDE300FB7B9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81FFE58B2C74CDE300FB7B9C /* libVKSdk.a */,
+				81FFE58D2C74CDE300FB7B9C /* VKSdkResources.bundle */,
+				81FFE58F2C74CDE300FB7B9C /* VKSdkFramework.framework */,
+				81FFE5912C74CDE300FB7B9C /* VKSdkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81FFE5922C74CE1B00FB7B9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -371,6 +429,8 @@
 				817562FA2C73692D001E1FF4 /* SwiftKeychainWrapper */,
 				817563032C737F22001E1FF4 /* Kingfisher */,
 				8175630A2C73B8F8001E1FF4 /* SwiftUIModal */,
+				8175630D2C73C08B001E1FF4 /* VKID */,
+				8175630F2C73C08B001E1FF4 /* VKIDCore */,
 			);
 			productName = MobileUpGallery;
 			productReference = 812FF9B82C71C11A005D10B4 /* MobileUpGallery.app */;
@@ -450,9 +510,16 @@
 				817562F92C73692D001E1FF4 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 				817563022C737F22001E1FF4 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				817563092C73B8F8001E1FF4 /* XCRemoteSwiftPackageReference "SwiftUIModal" */,
+				8175630C2C73C08B001E1FF4 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */,
 			);
 			productRefGroup = 812FF9B92C71C11A005D10B4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 81FFE5842C74CDE300FB7B9C /* Products */;
+					ProjectRef = 81FFE5832C74CDE300FB7B9C /* VK-ios-sdk.xcodeproj 16-12-30-528.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				812FF9B72C71C11A005D10B4 /* MobileUpGallery */,
@@ -461,6 +528,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		81FFE58B2C74CDE300FB7B9C /* libVKSdk.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libVKSdk.a;
+			remoteRef = 81FFE58A2C74CDE300FB7B9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		81FFE58D2C74CDE300FB7B9C /* VKSdkResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = VKSdkResources.bundle;
+			remoteRef = 81FFE58C2C74CDE300FB7B9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		81FFE58F2C74CDE300FB7B9C /* VKSdkFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VKSdkFramework.framework;
+			remoteRef = 81FFE58E2C74CDE300FB7B9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		81FFE5912C74CDE300FB7B9C /* VKSdkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = VKSdkTests.xctest;
+			remoteRef = 81FFE5902C74CDE300FB7B9C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		812FF9B62C71C11A005D10B4 /* Resources */ = {
@@ -515,6 +613,7 @@
 				812FFA2E2C71F5C5005D10B4 /* EmptyRouter.swift in Sources */,
 				812FFA322C7209E2005D10B4 /* SingleMediaScreen.swift in Sources */,
 				812FF9EC2C71CE7F005D10B4 /* AppCoordinator.swift in Sources */,
+				81FFE59A2C74DE8100FB7B9C /* VKIDManager.swift in Sources */,
 				812FF9E92C71C3E4005D10B4 /* SceneDelegate.swift in Sources */,
 				817562F32C72FD6C001E1FF4 /* WebCoordinator.swift in Sources */,
 				817562E12C722ED6001E1FF4 /* SingleMediaScreenViewModel.swift in Sources */,
@@ -709,10 +808,9 @@
 				DEVELOPMENT_TEAM = Q9BL3YJ6S3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "";
 				INFOPLIST_FILE = MobileUpGallery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -746,8 +844,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MobileUpGallery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -918,6 +1014,14 @@
 				minimumVersion = 1.0.3;
 			};
 		};
+		8175630C2C73C08B001E1FF4 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VKCOM/vkid-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -950,6 +1054,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 817563092C73B8F8001E1FF4 /* XCRemoteSwiftPackageReference "SwiftUIModal" */;
 			productName = SwiftUIModal;
+		};
+		8175630D2C73C08B001E1FF4 /* VKID */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8175630C2C73C08B001E1FF4 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */;
+			productName = VKID;
+		};
+		8175630F2C73C08B001E1FF4 /* VKIDCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8175630C2C73C08B001E1FF4 /* XCRemoteSwiftPackageReference "vkid-ios-sdk" */;
+			productName = VKIDCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

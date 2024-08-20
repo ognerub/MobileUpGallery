@@ -10,7 +10,7 @@ import Foundation
 enum NetworkConstants: String {
     // https://oauth.vk.com/authorize
     case authorize_url = "https://oauth.vk.com/authorize"
-    case client_id = "52164658"
+    case client_id = "52164659"
     case redirect_uri = "https://github.com/"
     case display = "page"
     case scope = "photos, video"
