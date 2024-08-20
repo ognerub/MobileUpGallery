@@ -72,49 +72,57 @@ public enum Mocks {
             id: UUID(),
             title: "This is first video",
             date: "25-may-2024",
-            url: "ItemMockVideo01"
+            url: "ItemMockVideo01",
+            thrumb: "ItemMockVideo01"
         ),
         VideoModel(
             id: UUID(),
             title: "This is second video, with long writen text, that should be automatically cutted",
             date: "10-may-2024",
-            url: "ItemMockVideo02"
+            url: "ItemMockVideo02",
+            thrumb: "ItemMockVideo02"
         ),
         VideoModel(
             id: UUID(),
             title: "This is third video",
             date: "07-april-2024",
-            url: "ItemMockVideo03"
+            url: "ItemMockVideo03",
+            thrumb: "ItemMockVideo03"
         ),
         VideoModel(
             id: UUID(),
             title: "This is fouth video",
             date: "20-march-2024",
-            url: "ItemMockVideo04"
+            url: "ItemMockVideo04",
+            thrumb: "ItemMockVideo04"
         ),
         VideoModel(
             id: UUID(),
             title: "This is fifth video",
             date: "01-august-2024",
-            url: "ItemMockVideo01"
+            url: "ItemMockVideo01",
+            thrumb: "ItemMockVideo01"
         ),
         VideoModel(
             id: UUID(),
             title: "This is six photo",
             date: "23-february-2024",
-            url: "ItemMockVideo02"
+            url: "ItemMockVideo02",
+            thrumb: "ItemMockVideo02"
         ),
         VideoModel(
             id: UUID(),
             title: "This is seventh video",
             date: "21-january-2024",
-            url: "ItemMockVideo03"
+            url: "ItemMockVideo03",
+            thrumb: "ItemMockVideo03"
         ),
         VideoModel(
             id: UUID(),
             title: "This is eight video",
             date: "08-june-2024",
-            url: "ItemMockVideo04"
+            url: "ItemMockVideo04",
+            thrumb: "ItemMockVideo04"
         )
     ]
 }

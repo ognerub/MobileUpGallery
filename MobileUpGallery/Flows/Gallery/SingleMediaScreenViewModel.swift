@@ -12,11 +12,16 @@ import Kingfisher
 final class SingleMediaScreenViewModel: ObservableObject {
 
     @Published var isShowingShareSheet = false
+    @Published var webView: WebView = WebView(url: nil)
+    @Published var currentUrlString: String = ""
+    @Published var isWebViewPresented: Bool = false
+    @Published var isWebViewLoading: Bool = true
 
     private let router: UnownedRouter<AppRoute>
 
     init(router: UnownedRouter<AppRoute>) {
         self.router = router
+        self.webView.delegate = self
     }
 
     func pop() {
@@ -37,5 +42,19 @@ final class SingleMediaScreenViewModel: ObservableObject {
             }
         }
         return img
+    }
+}
+
+extension SingleMediaScreenViewModel: WebViewProtocol {
+    func sendCurrentURL(string: String) {
+        self.currentUrlString = string
+    }
+
+    func sendWebViewStatus(isLoading: Bool) {
+        self.isWebViewLoading = isLoading
+    }
+
+    func sendWebViewVisibility(isVisible: Bool) {
+        self.isWebViewPresented = isVisible
     }
 }

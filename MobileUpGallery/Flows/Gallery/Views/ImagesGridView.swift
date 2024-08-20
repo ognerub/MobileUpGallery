@@ -27,9 +27,16 @@ struct ImagesGridView: View {
                 }
             }
         }
+        .task {
+            do {
+                try await viewModel.getPhotos()
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
     }
 }
 
 #Preview {
-    ImagesGridView(viewModel: GalleryScreenViewModel(router: .previewMock(), photosService: PhotosService()))
+    ImagesGridView(viewModel: GalleryScreenViewModel(router: .previewMock(), photosService: PhotosService(), videoService: VideoService()))
 }

@@ -54,6 +54,9 @@
 		817563042C737F22001E1FF4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 817563032C737F22001E1FF4 /* Kingfisher */; };
 		817563062C7384E5001E1FF4 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817563052C7384E5001E1FF4 /* ShareSheet.swift */; };
 		8175630B2C73B8F8001E1FF4 /* SwiftUIModal in Frameworks */ = {isa = PBXBuildFile; productRef = 8175630A2C73B8F8001E1FF4 /* SwiftUIModal */; };
+		81DCF8412C74FBAA009EBE29 /* VideoResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DCF8402C74FBAA009EBE29 /* VideoResponseModel.swift */; };
+		81DCF8432C74FD43009EBE29 /* VideoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DCF8422C74FD43009EBE29 /* VideoService.swift */; };
+		81DCF84B2C75085D009EBE29 /* VideoMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 81DCF84A2C75085D009EBE29 /* VideoMock.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +123,9 @@
 		817562FE2C736DCA001E1FF4 /* PhotosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosService.swift; sourceTree = "<group>"; };
 		817563002C737B79001E1FF4 /* PhotoResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResponseModel.swift; sourceTree = "<group>"; };
 		817563052C7384E5001E1FF4 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		81DCF8402C74FBAA009EBE29 /* VideoResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoResponseModel.swift; sourceTree = "<group>"; };
+		81DCF8422C74FD43009EBE29 /* VideoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoService.swift; sourceTree = "<group>"; };
+		81DCF84A2C75085D009EBE29 /* VideoMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VideoMock.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +202,7 @@
 		812FF9C12C71C11B005D10B4 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				81DCF84A2C75085D009EBE29 /* VideoMock.json */,
 				812FFA212C71EB89005D10B4 /* Mocks.swift */,
 				812FF9C22C71C11B005D10B4 /* Preview Assets.xcassets */,
 			);
@@ -302,6 +309,7 @@
 				812FFA1E2C71EA9F005D10B4 /* PhotoModel.swift */,
 				817562D32C722156001E1FF4 /* VideoModel.swift */,
 				817563002C737B79001E1FF4 /* PhotoResponseModel.swift */,
+				81DCF8402C74FBAA009EBE29 /* VideoResponseModel.swift */,
 				817562F42C735787001E1FF4 /* ExchangeAuthorizationCodeResponseModel.swift */,
 			);
 			path = Models;
@@ -334,6 +342,7 @@
 				817562EC2C7278FC001E1FF4 /* NetworkConstants.swift */,
 				817562F72C736614001E1FF4 /* NetworkService.swift */,
 				817562FE2C736DCA001E1FF4 /* PhotosService.swift */,
+				81DCF8422C74FD43009EBE29 /* VideoService.swift */,
 				817562FC2C736953001E1FF4 /* OAuthTokenStorage.swift */,
 			);
 			path = Services;
@@ -469,6 +478,7 @@
 			files = (
 				817562E32C72392A001E1FF4 /* Launch Screen.storyboard in Resources */,
 				812FF9C32C71C11B005D10B4 /* Preview Assets.xcassets in Resources */,
+				81DCF84B2C75085D009EBE29 /* VideoMock.json in Resources */,
 				812FF9FF2C71E3BB005D10B4 /* Localizable.strings in Resources */,
 				812FF9C02C71C11B005D10B4 /* Assets.xcassets in Resources */,
 				812FFA122C71E88F005D10B4 /* template.stencil in Resources */,
@@ -511,6 +521,7 @@
 				817562E92C723D5A001E1FF4 /* VideosListView.swift in Sources */,
 				817562FD2C736953001E1FF4 /* OAuthTokenStorage.swift in Sources */,
 				817562D82C7222B8001E1FF4 /* VideoImageView.swift in Sources */,
+				81DCF8432C74FD43009EBE29 /* VideoService.swift in Sources */,
 				812FF9F92C71E251005D10B4 /* LoginScreenViewModel.swift in Sources */,
 				812FFA2E2C71F5C5005D10B4 /* EmptyRouter.swift in Sources */,
 				812FFA322C7209E2005D10B4 /* SingleMediaScreen.swift in Sources */,
@@ -528,6 +539,7 @@
 				812FFA272C71EDCE005D10B4 /* PhotoImageView.swift in Sources */,
 				817562DB2C7224D0001E1FF4 /* NavigationBarBackButtonView.swift in Sources */,
 				817562F52C735787001E1FF4 /* ExchangeAuthorizationCodeResponseModel.swift in Sources */,
+				81DCF8412C74FBAA009EBE29 /* VideoResponseModel.swift in Sources */,
 				812FFA242C71EC1F005D10B4 /* GalleryScreenViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

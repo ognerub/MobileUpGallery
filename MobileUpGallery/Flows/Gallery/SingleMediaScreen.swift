@@ -34,9 +34,24 @@ struct SingleMediaScreen: View {
                         .ignoresSafeArea(.all)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                 } else {
-                    VideoImageView(video: video)
+                    ZStack {
+                        viewModel.webView
+                        if viewModel.isWebViewLoading {
+                            ProgressView()
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .ignoresSafeArea(.all)
+                        }
+                    }
                 }
             }
+            .onAppear {
+                if let url = URL(string: video?.url ?? "") {
+                    viewModel.webView = WebView(url: url)
+                }
+            }
+            .sheet(isPresented: $viewModel.isWebViewPresented, content: {
+                viewModel.webView
+            })
             .navigationBarItems(
                 leading: NavigationBarButtonView(
                     action: {
@@ -68,5 +83,5 @@ struct SingleMediaScreen: View {
 }
 
 #Preview {
-    SingleMediaScreen(viewModel: SingleMediaScreenViewModel(router: .previewMock()), photo: Mocks.photos[0])
+    SingleMediaScreen(viewModel: SingleMediaScreenViewModel(router: .previewMock()), photo: nil, video: Mocks.videos[0])
 }

@@ -12,5 +12,5 @@ struct PhotoModel: Identifiable, Decodable {
     let title: String
     let date: String
     let url: String
-    let thrumb: String
+    let thrumb: String?
 }

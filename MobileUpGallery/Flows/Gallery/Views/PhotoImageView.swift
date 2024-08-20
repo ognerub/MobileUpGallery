@@ -25,9 +25,6 @@ struct PhotoImageView: View {
                 Image(systemName: "nosign")
             }
         }
-//        Image(uiImage: UIImage(named: imageURL ?? "") ?? UIImage())
-//            .resizable()
-//            .scaledToFill()
     }
 }
 

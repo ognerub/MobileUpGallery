@@ -21,7 +21,7 @@ final class PhotosService: PhotosServiceProtocol {
     }
 
     func getPhotos() async throws -> PhotoResponseModel {
-        var responseModel = PhotoResponseModel(response: ResponseData(count: 0, items: []))
+        var responseModel = PhotoResponseModel(response: PhotoResponseData(count: 0, items: []))
         if let url = createPhotosRequestUrl() {
             let request = URLRequest(url: url)
             let (data, _) = try await urlSession.data(for: request)

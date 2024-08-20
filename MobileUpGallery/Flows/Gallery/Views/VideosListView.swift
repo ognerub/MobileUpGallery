@@ -22,9 +22,12 @@ struct VideosListView: View {
                 }
             }
         }
+        .task {
+            viewModel.getVideos()
+        }
     }
 }
 
 #Preview {
-    VideosListView(viewModel: GalleryScreenViewModel(router: .previewMock(), photosService: PhotosService()))
+    VideosListView(viewModel: GalleryScreenViewModel(router: .previewMock(), photosService: PhotosService(), videoService: VideoService()))
 }

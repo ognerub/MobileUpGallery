@@ -6,15 +6,26 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct VideoImageView: View {
     let video: VideoModel?
 
     var body: some View {
         ZStack {
-            Image(uiImage: UIImage(named: video?.url ?? "") ?? UIImage())
-                .resizable()
-                .scaledToFill()
+            Group {
+                if let imageURL = video?.thrumb,
+                    let url = URL(string: imageURL) {
+                    KFImage(url)
+                        .placeholder{
+                                ProgressView()
+                            }
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                } else {
+                    Image(systemName: "nosign")
+                }
+            }
             Text(video?.title ?? "")
                 .padding(.horizontal, DSConstants.fouthSpacing)
                 .padding(.vertical, DSConstants.defaultSpacing)

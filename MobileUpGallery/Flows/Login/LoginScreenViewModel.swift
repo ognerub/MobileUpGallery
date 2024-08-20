@@ -8,7 +8,7 @@
 import SwiftUI
 import XCoordinator
 
-final class LoginScreenViewModel: ObservableObject, WebViewProtocol {
+final class LoginScreenViewModel: ObservableObject {
 
     @Published var webView: WebView = WebView(url: nil)
     @Published var currentUrlString: String = ""
@@ -30,18 +30,6 @@ final class LoginScreenViewModel: ObservableObject, WebViewProtocol {
         router.trigger(.gallery)
     }
 
-    func sendCurrentURL(string: String) {
-        self.currentUrlString = string
-    }
-
-    func sendWebViewStatus(isLoading: Bool) {
-        self.isWebViewLoading = isLoading
-    }
-
-    func sendWebViewVisibility(isVisible: Bool) {
-        self.isWebViewPresented = isVisible
-    }
-
     func saveOAuthToken(_ token: String) {
         storage.token = token
     }
@@ -57,5 +45,18 @@ final class LoginScreenViewModel: ObservableObject, WebViewProtocol {
     private func createWebViewUrl() -> URL? {
         return networkService.createWebViewUrl()
     }
+}
 
+extension LoginScreenViewModel: WebViewProtocol {
+    func sendCurrentURL(string: String) {
+        self.currentUrlString = string
+    }
+
+    func sendWebViewStatus(isLoading: Bool) {
+        self.isWebViewLoading = isLoading
+    }
+
+    func sendWebViewVisibility(isVisible: Bool) {
+        self.isWebViewPresented = isVisible
+    }
 }
