@@ -36,6 +36,7 @@ struct NavigationBarButtonView: View {
                 .foregroundColor(.blackPrimary))
         case .share:
             return AnyView(Image(.shareButton)
+                .renderingMode(.template)
                 .tint(Color(.blackPrimary)))
         }
     }

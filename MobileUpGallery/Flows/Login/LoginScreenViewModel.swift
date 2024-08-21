@@ -15,7 +15,7 @@ final class LoginScreenViewModel: ObservableObject {
     @Published var currentUrlString: String = ""
     @Published var isWebViewLoading: Bool = true
     @Published var isWebViewPresented: Bool = false
-    @Published var isConnected: Bool = false
+    @Published var isConnected: Bool = true
 
     private let router: UnownedRouter<AppRoute>
     private let networkService: NetworkServiceProtocol

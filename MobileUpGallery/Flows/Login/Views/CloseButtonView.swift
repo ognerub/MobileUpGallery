@@ -16,7 +16,15 @@ struct CloseButtonView: View {
             Button(action: {
                 (action ?? { })()
             }, label: {
-                Image(uiImage: UIImage(systemName: "xmark") ?? UIImage())
+                ZStack {
+                    Rectangle()
+                        .foregroundColor(.whitePrimary)
+                        .frame(width: 42, height: 42)
+                        .cornerRadius(21)
+                    Image(uiImage: UIImage(systemName: "xmark") ?? UIImage())
+                        .renderingMode(.template)
+                        .tint(.blackPrimary)
+                }
             })
             .frame(maxWidth: .infinity, alignment: .trailing)
             .padding(20)
