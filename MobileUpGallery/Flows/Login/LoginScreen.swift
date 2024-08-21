@@ -36,9 +36,6 @@ struct LoginScreen: View {
                         }, errorType: .noInternet)
                     }
                 }
-                .task {
-                    viewModel.checkInternetConnection()
-                }
             })
         }
         .onChange(of: viewModel.currentUrlString, perform: { value in
@@ -68,6 +65,7 @@ struct LoginScreen: View {
     var loginButton: some View {
         Button(action: {
             if viewModel.checkOAuthTokenIsEmpty() {
+                viewModel.checkInternetConnection()
                 viewModel.isWebViewPresented = true
             } else {
                 viewModel.pushToGalleryScreen()
