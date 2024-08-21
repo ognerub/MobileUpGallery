@@ -57,6 +57,9 @@
 		81DCF8412C74FBAA009EBE29 /* VideoResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DCF8402C74FBAA009EBE29 /* VideoResponseModel.swift */; };
 		81DCF8432C74FD43009EBE29 /* VideoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DCF8422C74FD43009EBE29 /* VideoService.swift */; };
 		81DCF84B2C75085D009EBE29 /* VideoMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 81DCF84A2C75085D009EBE29 /* VideoMock.json */; };
+		81DCF84F2C75CDD1009EBE29 /* NoNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DCF84E2C75CDD1009EBE29 /* NoNetworkView.swift */; };
+		81DCF8522C75CF40009EBE29 /* NetworkState in Frameworks */ = {isa = PBXBuildFile; productRef = 81DCF8512C75CF40009EBE29 /* NetworkState */; };
+		81DCF8542C75D163009EBE29 /* CloseButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DCF8532C75D163009EBE29 /* CloseButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +129,8 @@
 		81DCF8402C74FBAA009EBE29 /* VideoResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoResponseModel.swift; sourceTree = "<group>"; };
 		81DCF8422C74FD43009EBE29 /* VideoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoService.swift; sourceTree = "<group>"; };
 		81DCF84A2C75085D009EBE29 /* VideoMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VideoMock.json; sourceTree = "<group>"; };
+		81DCF84E2C75CDD1009EBE29 /* NoNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNetworkView.swift; sourceTree = "<group>"; };
+		81DCF8532C75D163009EBE29 /* CloseButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8175630B2C73B8F8001E1FF4 /* SwiftUIModal in Frameworks */,
+				81DCF8522C75CF40009EBE29 /* NetworkState in Frameworks */,
 				812FF9F12C71CFBC005D10B4 /* XCoordinatorCombine in Frameworks */,
 				812FF9EF2C71CFBC005D10B4 /* XCoordinator in Frameworks */,
 				817562FB2C73692D001E1FF4 /* SwiftKeychainWrapper in Frameworks */,
@@ -353,6 +359,8 @@
 			children = (
 				817562EF2C72816A001E1FF4 /* WebView.swift */,
 				817562F22C72FD6C001E1FF4 /* WebCoordinator.swift */,
+				81DCF84E2C75CDD1009EBE29 /* NoNetworkView.swift */,
+				81DCF8532C75D163009EBE29 /* CloseButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -380,6 +388,7 @@
 				817562FA2C73692D001E1FF4 /* SwiftKeychainWrapper */,
 				817563032C737F22001E1FF4 /* Kingfisher */,
 				8175630A2C73B8F8001E1FF4 /* SwiftUIModal */,
+				81DCF8512C75CF40009EBE29 /* NetworkState */,
 			);
 			productName = MobileUpGallery;
 			productReference = 812FF9B82C71C11A005D10B4 /* MobileUpGallery.app */;
@@ -459,6 +468,7 @@
 				817562F92C73692D001E1FF4 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 				817563022C737F22001E1FF4 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				817563092C73B8F8001E1FF4 /* XCRemoteSwiftPackageReference "SwiftUIModal" */,
+				81DCF8502C75CF40009EBE29 /* XCRemoteSwiftPackageReference "NetworkState" */,
 			);
 			productRefGroup = 812FF9B92C71C11A005D10B4 /* Products */;
 			projectDirPath = "";
@@ -524,6 +534,7 @@
 				81DCF8432C74FD43009EBE29 /* VideoService.swift in Sources */,
 				812FF9F92C71E251005D10B4 /* LoginScreenViewModel.swift in Sources */,
 				812FFA2E2C71F5C5005D10B4 /* EmptyRouter.swift in Sources */,
+				81DCF84F2C75CDD1009EBE29 /* NoNetworkView.swift in Sources */,
 				812FFA322C7209E2005D10B4 /* SingleMediaScreen.swift in Sources */,
 				812FF9EC2C71CE7F005D10B4 /* AppCoordinator.swift in Sources */,
 				812FF9E92C71C3E4005D10B4 /* SceneDelegate.swift in Sources */,
@@ -535,6 +546,7 @@
 				817563012C737B79001E1FF4 /* PhotoResponseModel.swift in Sources */,
 				817562D42C722156001E1FF4 /* VideoModel.swift in Sources */,
 				812FFA1F2C71EA9F005D10B4 /* PhotoModel.swift in Sources */,
+				81DCF8542C75D163009EBE29 /* CloseButtonView.swift in Sources */,
 				812FF9F72C71DB30005D10B4 /* DSConstants.swift in Sources */,
 				812FFA272C71EDCE005D10B4 /* PhotoImageView.swift in Sources */,
 				817562DB2C7224D0001E1FF4 /* NavigationBarBackButtonView.swift in Sources */,
@@ -930,6 +942,14 @@
 				minimumVersion = 1.0.3;
 			};
 		};
+		81DCF8502C75CF40009EBE29 /* XCRemoteSwiftPackageReference "NetworkState" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloper/NetworkState.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -962,6 +982,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 817563092C73B8F8001E1FF4 /* XCRemoteSwiftPackageReference "SwiftUIModal" */;
 			productName = SwiftUIModal;
+		};
+		81DCF8512C75CF40009EBE29 /* NetworkState */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81DCF8502C75CF40009EBE29 /* XCRemoteSwiftPackageReference "NetworkState" */;
+			productName = NetworkState;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

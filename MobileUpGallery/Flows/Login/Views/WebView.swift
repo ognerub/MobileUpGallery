@@ -19,6 +19,7 @@ struct WebView: UIViewRepresentable {
     var delegate: WebViewProtocol?
     var webView: WKWebView = {
         let configuration = WKWebViewConfiguration()
+        configuration.mediaTypesRequiringUserActionForPlayback = []
         var webView = WKWebView(frame: .zero, configuration: configuration)
         return webView
     }()

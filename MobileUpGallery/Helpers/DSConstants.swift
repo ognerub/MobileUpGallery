@@ -26,7 +26,7 @@ public enum DSConstants {
 
     // MARK: Login Screen
     /// 24
-    static let titleTextPadding: CGFloat = 24
+    static let titleText: CGFloat = 24
     /// 44
     static let titleTextSize: CGFloat = 44
     /// 15

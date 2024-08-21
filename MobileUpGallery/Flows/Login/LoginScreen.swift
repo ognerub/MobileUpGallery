@@ -20,12 +20,24 @@ struct LoginScreen: View {
             }
             .sheet(isPresented: $viewModel.isWebViewPresented, content: {
                 ZStack {
-                    viewModel.webView
-                    if viewModel.isWebViewLoading {
-                        ProgressView()
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .ignoresSafeArea(.all)
+                    if viewModel.isConnected {
+                        viewModel.webView
+                        if viewModel.isWebViewLoading {
+                            ProgressView()
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .ignoresSafeArea(.all)
+                        }
+                        CloseButtonView(action: {
+                            viewModel.isWebViewPresented = false
+                        })
+                    } else {
+                        NoNetworkView(action: {
+                            viewModel.isWebViewPresented = false
+                        }, errorType: .noInternet)
                     }
+                }
+                .task {
+                    viewModel.checkInternetConnection()
                 }
             })
         }
@@ -49,7 +61,7 @@ struct LoginScreen: View {
             .font(Font.system(size: DSConstants.titleTextSize, weight: .bold))
             .frame(maxWidth: .infinity, alignment: .leading)
             .foregroundColor(.blackPrimary)
-            .padding(.horizontal, DSConstants.titleTextPadding)
+            .padding(.horizontal, DSConstants.titleText)
             .frame(maxHeight: .infinity, alignment: .center)
     }
 

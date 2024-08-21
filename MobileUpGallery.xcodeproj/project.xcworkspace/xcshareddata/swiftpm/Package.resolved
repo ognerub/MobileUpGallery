@@ -1,5 +1,5 @@
 {
-  "originHash" : "bbad795256d8bedeffa6d8ccf0c3edf19ae7b79d381bdf8b0a5bfe9deedf39f8",
+  "originHash" : "48be5f53db0bbf95092fbf182fef1cc57e3d67a85d8188c31bfcfd6fa1b735ce",
   "pins" : [
     {
       "identity" : "kingfisher",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "2ef543ee21d63734e1c004ad6c870255e8716c50",
         "version" : "7.12.0"
+      }
+    },
+    {
+      "identity" : "networkstate",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rebeloper/NetworkState.git",
+      "state" : {
+        "revision" : "cae816e218d8a04d71dc3479ce059ed5380e9294",
+        "version" : "0.1.0"
       }
     },
     {

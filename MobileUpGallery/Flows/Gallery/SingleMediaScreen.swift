@@ -55,6 +55,7 @@ struct SingleMediaScreen: View {
             .navigationBarItems(
                 leading: NavigationBarButtonView(
                     action: {
+                        viewModel.isShowingShareSheet = false
                         viewModel.pop()
                     },
                     type: .backArrow)
@@ -75,6 +76,9 @@ struct SingleMediaScreen: View {
                 let image = viewModel.getImage(from: photo?.url)
                 if let url = URL(string: photo?.url ?? "") {
                     ShareSheet(items: [image, url])
+                }
+                if let url = URL(string: video?.url ?? "") {
+                    ShareSheet(items: [url])
                 }
             })
         }

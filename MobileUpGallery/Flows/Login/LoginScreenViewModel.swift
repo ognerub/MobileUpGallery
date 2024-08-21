@@ -7,6 +7,7 @@
 
 import SwiftUI
 import XCoordinator
+import Network
 
 final class LoginScreenViewModel: ObservableObject {
 
@@ -14,6 +15,7 @@ final class LoginScreenViewModel: ObservableObject {
     @Published var currentUrlString: String = ""
     @Published var isWebViewLoading: Bool = true
     @Published var isWebViewPresented: Bool = false
+    @Published var isConnected: Bool = false
 
     private let router: UnownedRouter<AppRoute>
     private let networkService: NetworkServiceProtocol
@@ -24,6 +26,18 @@ final class LoginScreenViewModel: ObservableObject {
         self.networkService = networkService
         self.webView = WebView(url: createWebViewUrl())
         self.webView.delegate = self
+    }
+
+    func checkInternetConnection() {
+        let monitor = NWPathMonitor()
+        monitor.pathUpdateHandler = { [weak self] path in
+            guard let self else { return }
+            Task { @MainActor in
+                self.isConnected = (path.status == .satisfied)
+            }
+        }
+        let queue = DispatchQueue(label: "InternetMonitor")
+        monitor.start(queue: queue)
     }
 
     func pushToGalleryScreen() {
